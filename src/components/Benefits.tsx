@@ -1,4 +1,5 @@
 
+
 import { CheckCircle, Users, TrendingUp, Target } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -64,7 +65,7 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white font-lexend">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
@@ -77,12 +78,12 @@ const Benefits = () => {
 
         <div className="max-w-6xl mx-auto">
           <Tabs defaultValue="business-owner" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-12 bg-white border border-black">
+            <TabsList className="grid w-full grid-cols-3 mb-12 bg-white">
               {benefitSections.map((section) => (
                 <TabsTrigger 
                   key={section.id} 
                   value={section.id}
-                  className="data-[state=active]:bg-black data-[state=active]:text-white text-black border-r border-black last:border-r-0 py-3 px-4"
+                  className="data-[state=active]:bg-black data-[state=active]:text-white text-black py-4 px-6 text-sm font-medium transition-all duration-200 hover:bg-gray-100"
                 >
                   <section.icon className="h-4 w-4 mr-2" />
                   {section.title}
@@ -94,7 +95,7 @@ const Benefits = () => {
               <TabsContent key={section.id} value={section.id}>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {section.benefits.map((benefit, benefitIndex) => (
-                    <div key={benefitIndex} className="bg-white border-2 border-black p-6 hover:bg-black hover:text-white transition-all duration-300">
+                    <div key={benefitIndex} className="bg-white border border-black p-6 hover:bg-black hover:text-white transition-all duration-300">
                       <div className="flex items-start">
                         <CheckCircle className="h-6 w-6 mt-1 mr-3 flex-shrink-0" />
                         <div>
@@ -119,3 +120,4 @@ const Benefits = () => {
 };
 
 export default Benefits;
+

@@ -1,10 +1,11 @@
 
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden">
+    <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
       {/* Header */}
       <header className="w-full py-6 px-6 border-b border-black">
         <div className="container mx-auto">
@@ -18,7 +19,7 @@ const Hero = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-black">
-                The Missing Team Behind Your Growth
+                The Missing Team Behind<br />Your Growth
               </h2>
               <p className="text-xl md:text-2xl text-black mb-8 max-w-2xl mx-auto">
                 Leads. Sales. Content Creation.
@@ -58,3 +59,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

@@ -1,10 +1,11 @@
 
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section className="py-20 bg-black text-white">
+    <section className="py-20 bg-black text-white font-lexend">
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -46,3 +47,4 @@ const CTA = () => {
 };
 
 export default CTA;
+

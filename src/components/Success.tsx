@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, Users, DollarSign, Target, Youtube } from "lucide-react";
@@ -26,10 +27,22 @@ const Success = () => {
   ];
 
   const caseStudies = [
-    "Successful campaigns across multiple languages",
-    "Sales webinar optimised - edtech",
-    "Copywriting success",
-    "Websites optimised for conversions"
+    {
+      title: "Successful campaigns across multiple languages",
+      bgImage: "/lovable-uploads/3511d400-61fa-43ff-a2fd-290b363961e7.png"
+    },
+    {
+      title: "Sales webinar optimised - edtech",
+      bgImage: "/lovable-uploads/659b5bf7-c858-4e82-b7cc-f4c004c5e7d0.png"
+    },
+    {
+      title: "Copywriting success",
+      bgImage: "/lovable-uploads/4f88fc2e-9d3b-4ad6-be40-c4cfeeec3230.png"
+    },
+    {
+      title: "Websites optimised for conversions",
+      bgImage: "/lovable-uploads/3511d400-61fa-43ff-a2fd-290b363961e7.png"
+    }
   ];
 
   const handleVideoClick = () => {
@@ -37,7 +50,7 @@ const Success = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white font-lexend">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
@@ -84,6 +97,33 @@ const Success = () => {
                       ))}
                     </div>
                   </div>
+
+                  {/* Project Images */}
+                  <div className="mt-8">
+                    <h4 className="text-lg font-semibold text-black mb-4">Project Gallery:</h4>
+                    <div className="grid grid-cols-2 gap-4">
+                      <img 
+                        src="/lovable-uploads/3511d400-61fa-43ff-a2fd-290b363961e7.png" 
+                        alt="CodeBegun team meeting" 
+                        className="w-full h-32 object-cover border border-black"
+                      />
+                      <img 
+                        src="/lovable-uploads/659b5bf7-c858-4e82-b7cc-f4c004c5e7d0.png" 
+                        alt="CodeBegun celebration event" 
+                        className="w-full h-32 object-cover border border-black"
+                      />
+                      <img 
+                        src="/lovable-uploads/4f88fc2e-9d3b-4ad6-be40-c4cfeeec3230.png" 
+                        alt="CodeBegun workshop" 
+                        className="w-full h-32 object-cover border border-black"
+                      />
+                      <img 
+                        src="/lovable-uploads/3511d400-61fa-43ff-a2fd-290b363961e7.png" 
+                        alt="CodeBegun team" 
+                        className="w-full h-32 object-cover border border-black"
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 {/* Right side - YouTube video */}
@@ -106,9 +146,21 @@ const Success = () => {
               <h4 className="text-2xl font-bold text-black mb-6">Case Studies</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {caseStudies.map((study, index) => (
-                  <div key={index} className="flex items-center p-4 bg-white border border-black">
-                    <TrendingUp className="h-5 w-5 text-black mr-3 flex-shrink-0" />
-                    <span className="text-black">{study}</span>
+                  <div 
+                    key={index} 
+                    className="flex items-center p-6 bg-white border border-black relative overflow-hidden min-h-[120px]"
+                    style={{
+                      backgroundImage: `url(${study.bgImage})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  >
+                    <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+                    <div className="relative z-10 flex items-center">
+                      <TrendingUp className="h-5 w-5 text-white mr-3 flex-shrink-0" />
+                      <span className="text-white font-semibold">{study.title}</span>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -121,3 +173,4 @@ const Success = () => {
 };
 
 export default Success;
+
