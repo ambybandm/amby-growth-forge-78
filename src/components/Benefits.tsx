@@ -1,9 +1,11 @@
 
 import { CheckCircle, Users, TrendingUp, Target } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Benefits = () => {
   const benefitSections = [
     {
+      id: "business-owner",
       icon: Users,
       title: "As a Business Owner",
       benefits: [
@@ -22,6 +24,7 @@ const Benefits = () => {
       ]
     },
     {
+      id: "growth-lead",
       icon: TrendingUp,
       title: "As a Growth Team Lead",
       benefits: [
@@ -40,6 +43,7 @@ const Benefits = () => {
       ]
     },
     {
+      id: "marketing-lead",
       icon: Target,
       title: "As a Marketing Team Lead",
       benefits: [
@@ -66,42 +70,48 @@ const Benefits = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
             How You Can Benefit
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-black max-w-2xl mx-auto">
             Tailored solutions for different roles and responsibilities
           </p>
         </div>
 
-        <div className="space-y-16">
-          {benefitSections.map((section, sectionIndex) => (
-            <div key={sectionIndex} className="max-w-6xl mx-auto">
-              <div className="flex items-center justify-center mb-8">
-                <div className="bg-black rounded-full p-4 mr-4">
-                  <section.icon className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-3xl font-bold text-black">
+        <div className="max-w-6xl mx-auto">
+          <Tabs defaultValue="business-owner" className="w-full">
+            <TabsList className="grid w-full grid-cols-3 mb-12 bg-white border border-black">
+              {benefitSections.map((section) => (
+                <TabsTrigger 
+                  key={section.id} 
+                  value={section.id}
+                  className="data-[state=active]:bg-black data-[state=active]:text-white text-black border-r border-black last:border-r-0 py-3 px-4"
+                >
+                  <section.icon className="h-4 w-4 mr-2" />
                   {section.title}
-                </h3>
-              </div>
+                </TabsTrigger>
+              ))}
+            </TabsList>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {section.benefits.map((benefit, benefitIndex) => (
-                  <div key={benefitIndex} className="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200">
-                    <div className="flex items-start">
-                      <CheckCircle className="h-6 w-6 text-black mt-1 mr-3 flex-shrink-0" />
-                      <div>
-                        <h4 className="text-lg font-semibold text-black mb-3">
-                          {benefit.title}
-                        </h4>
-                        <p className="text-gray-600 leading-relaxed">
-                          {benefit.description}
-                        </p>
+            {benefitSections.map((section) => (
+              <TabsContent key={section.id} value={section.id}>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  {section.benefits.map((benefit, benefitIndex) => (
+                    <div key={benefitIndex} className="bg-white border-2 border-black p-6 hover:bg-black hover:text-white transition-all duration-300">
+                      <div className="flex items-start">
+                        <CheckCircle className="h-6 w-6 mt-1 mr-3 flex-shrink-0" />
+                        <div>
+                          <h4 className="text-lg font-semibold mb-3">
+                            {benefit.title}
+                          </h4>
+                          <p className="leading-relaxed">
+                            {benefit.description}
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+                  ))}
+                </div>
+              </TabsContent>
+            ))}
+          </Tabs>
         </div>
       </div>
     </section>
