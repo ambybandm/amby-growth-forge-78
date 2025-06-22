@@ -60,10 +60,10 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
             How You Can Benefit
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -75,21 +75,21 @@ const Benefits = () => {
           {benefitSections.map((section, sectionIndex) => (
             <div key={sectionIndex} className="max-w-6xl mx-auto">
               <div className="flex items-center justify-center mb-8">
-                <div className="bg-blue-600 rounded-full p-4 mr-4">
+                <div className="bg-black rounded-full p-4 mr-4">
                   <section.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900">
+                <h3 className="text-3xl font-bold text-black">
                   {section.title}
                 </h3>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {section.benefits.map((benefit, benefitIndex) => (
-                  <div key={benefitIndex} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div key={benefitIndex} className="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200">
                     <div className="flex items-start">
-                      <CheckCircle className="h-6 w-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
+                      <CheckCircle className="h-6 w-6 text-black mt-1 mr-3 flex-shrink-0" />
                       <div>
-                        <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                        <h4 className="text-lg font-semibold text-black mb-3">
                           {benefit.title}
                         </h4>
                         <p className="text-gray-600 leading-relaxed">
