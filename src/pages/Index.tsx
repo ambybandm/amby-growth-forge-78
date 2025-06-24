@@ -5,6 +5,7 @@ import Benefits from "@/components/Benefits";
 import WhyAmby from "@/components/WhyAmby";
 import Success from "@/components/Success";
 import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <WhyAmby />
       <Success />
       <CTA />
+      <Footer />
     </div>
   );
 };
