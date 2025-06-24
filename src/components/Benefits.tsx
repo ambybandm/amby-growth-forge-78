@@ -58,7 +58,7 @@ const Benefits = () => {
         <div className="max-w-6xl mx-auto">
           <Tabs defaultValue="business-owner" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-12 bg-white">
-              {benefitSections.map(section => <TabsTrigger key={section.id} value={section.id} className="data-[state=active]:text-white text-black py-4 px-6 text-base transition-all duration-200 rounded-none font-medium bg-slate-900 hover:bg-slate-800">
+              {benefitSections.map(section => <TabsTrigger key={section.id} value={section.id} className="data-[state=active]:bg-black data-[state=active]:text-white text-black py-4 px-6 text-base transition-all duration-200 hover:bg-gray-100 rounded-none font-medium">
                   <section.icon className="h-4 w-4 mr-2" />
                   {section.title}
                 </TabsTrigger>)}
