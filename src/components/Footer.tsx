@@ -11,8 +11,8 @@ const Footer = () => {
               The missing team behind your growth. We deliver leads, sales, and content creation to accelerate your business.
             </p>
             <div className="space-y-2 text-gray-600">
-              <p>📧 hello@amby.co</p>
-              <p>📞 +1 (555) 123-4567</p>
+              <p>📧 teja@ambymc.com</p>
+              <p>📞 +91 8333012936</p>
             </div>
           </div>
 
@@ -21,7 +21,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-black mb-4">Services</h4>
             <ul className="space-y-2 text-gray-600">
               <li>Lead Generation</li>
-              <li>Sales</li>
+              <li>Revenue Generation</li>
               <li>Social Media Growth</li>
               <li>Performance Ads</li>
             </ul>
@@ -35,6 +35,7 @@ const Footer = () => {
               <li>Case Studies</li>
               <li>Contact</li>
               <li>Careers</li>
+              <li>Terms and Conditions</li>
             </ul>
           </div>
         </div>

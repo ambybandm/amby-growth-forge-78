@@ -1,8 +1,7 @@
 
-
 import { Rocket, Settings, BarChart3, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const WhyAmby = () => {
   const reasons = [
@@ -78,8 +77,8 @@ const WhyAmby = () => {
             Book Our Service
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg font-semibold">
-            <Play className="mr-2 h-5 w-5" />
+          <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg font-semibold bg-transparent">
+            <ArrowRight className="mr-2 h-5 w-5" />
             Free Strategy Consultation
           </Button>
         </div>
@@ -89,4 +88,3 @@ const WhyAmby = () => {
 };
 
 export default WhyAmby;
-

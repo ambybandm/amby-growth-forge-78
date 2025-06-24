@@ -1,15 +1,34 @@
 
-
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
     <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
       {/* Header */}
       <header className="w-full py-6 px-6 border-b border-black">
-        <div className="container mx-auto">
+        <div className="container mx-auto flex items-center justify-between">
           <h1 className="text-2xl font-bold text-black">AMBY</h1>
+          
+          {/* Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <div className="flex items-center space-x-6 text-black">
+              <span className="hover:text-gray-600 cursor-pointer">Lead Generation</span>
+              <span className="hover:text-gray-600 cursor-pointer">Revenue Generation</span>
+              <span className="hover:text-gray-600 cursor-pointer">Social Media Growth</span>
+              <span className="hover:text-gray-600 cursor-pointer">Performance Ads</span>
+            </div>
+            <div className="flex items-center space-x-4">
+              <Button size="sm" className="bg-black hover:bg-gray-800 text-white font-semibold">
+                Book Our Service
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+              <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold">
+                Get in Touch
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </div>
+          </nav>
         </div>
       </header>
 
@@ -32,7 +51,7 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-black hover:text-white px-8 py-4 text-lg font-semibold">
-                <Play className="mr-2 h-5 w-5" />
+                <ArrowRight className="mr-2 h-5 w-5" />
                 Free Strategy Consultation
               </Button>
             </div>
@@ -59,4 +78,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

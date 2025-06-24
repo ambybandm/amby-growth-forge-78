@@ -1,5 +1,4 @@
 
-
 import { CheckCircle, Users, TrendingUp, Target } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -95,14 +94,14 @@ const Benefits = () => {
               <TabsContent key={section.id} value={section.id}>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {section.benefits.map((benefit, benefitIndex) => (
-                    <div key={benefitIndex} className="bg-white border border-black p-6 hover:bg-black hover:text-white transition-all duration-300">
+                    <div key={benefitIndex} className="text-left">
                       <div className="flex items-start">
-                        <CheckCircle className="h-6 w-6 mt-1 mr-3 flex-shrink-0" />
+                        <CheckCircle className="h-6 w-6 mt-1 mr-3 flex-shrink-0 text-black" />
                         <div>
-                          <h4 className="text-lg font-semibold mb-3">
+                          <h4 className="text-lg font-semibold mb-3 text-black">
                             {benefit.title}
                           </h4>
-                          <p className="leading-relaxed">
+                          <p className="leading-relaxed text-gray-600">
                             {benefit.description}
                           </p>
                         </div>
@@ -120,4 +119,3 @@ const Benefits = () => {
 };
 
 export default Benefits;
-

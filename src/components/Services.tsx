@@ -8,22 +8,26 @@ const Services = () => {
     {
       icon: Target,
       title: "Lead Generation",
-      description: "We deliver leads that actually converts so that you can focus on closing, not chasing"
+      description: "We deliver leads that actually converts so that you can focus on closing, not chasing",
+      backgroundImage: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: TrendingUp,
-      title: "Sales",
-      description: "We don't stop at leads, we convert, we deliver revenues. We love accountability"
+      title: "Revenue Generation",
+      description: "We don't stop at leads, we convert, we deliver revenues. We love accountability",
+      backgroundImage: "https://images.unsplash.com/photo-1551038247-3d9af20df552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Share2,
       title: "Social Media Growth",
-      description: "Making Brands visible, valuable & viral - consistently"
+      description: "Making Brands visible, valuable & viral - consistently",
+      backgroundImage: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Zap,
       title: "Performance Ads",
-      description: "We deliver winning ads to improve your funnel metrics."
+      description: "We deliver winning ads to improve your funnel metrics.",
+      backgroundImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -41,18 +45,23 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 bg-white">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-full bg-black flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="h-8 w-8 text-white" />
+            <Card key={index} className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 bg-white relative overflow-hidden">
+              <div 
+                className="absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: `url(${service.backgroundImage})` }}
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-60" />
+              <CardContent className="p-8 relative z-10">
+                <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <service.icon className="h-8 w-8 text-black" />
                 </div>
-                <h3 className="text-2xl font-bold text-black mb-4">
+                <h3 className="text-2xl font-bold text-white mb-4">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-200 mb-6 leading-relaxed">
                   {service.description}
                 </p>
-                <Button variant="ghost" className="text-black hover:text-gray-700 p-0 font-semibold">
+                <Button variant="ghost" className="text-white hover:text-gray-300 p-0 font-semibold">
                   Know more
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
