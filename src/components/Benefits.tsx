@@ -77,12 +77,12 @@ const Benefits = () => {
 
         <div className="max-w-6xl mx-auto">
           <Tabs defaultValue="business-owner" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-12 bg-white">
+            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 gap-2 md:gap-0 mb-12 bg-white">
               {benefitSections.map((section) => (
                 <TabsTrigger 
                   key={section.id} 
                   value={section.id}
-                  className="data-[state=active]:bg-black data-[state=active]:text-white text-black py-4 px-6 text-base font-medium transition-all duration-200 hover:bg-gray-100"
+                  className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-black bg-gray-100 hover:bg-gray-200 py-4 px-6 text-base font-medium transition-all duration-200 w-full"
                 >
                   <section.icon className="h-4 w-4 mr-2" />
                   {section.title}
