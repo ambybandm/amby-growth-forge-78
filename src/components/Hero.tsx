@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
+  return <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
       {/* Header */}
       <header className="w-full py-6 px-6 border-b border-black">
         <div className="container mx-auto flex items-center justify-between">
@@ -37,7 +34,7 @@ const Hero = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
-              <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-black">
+              <h2 className="font-bold mb-6 leading-tight text-black text-center md:text-8xl text-7xl">
                 The missing team behind<br />your growth.
               </h2>
               <p className="text-xl md:text-2xl text-black mb-8 max-w-2xl mx-auto">
@@ -73,8 +70,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
