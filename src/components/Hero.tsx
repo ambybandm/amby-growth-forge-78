@@ -31,7 +31,7 @@ const Hero = () => {
 
       {/* Main Hero Content */}
       <div className="flex-1 flex items-center justify-center">
-        <div className="container mx-auto relative z-10 px-0">
+        <div className="container mx-auto relative z-10 px-[24px]">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <h2 className="font-bold mb-6 leading-tight text-black text-center md:text-8xl text-6xl">
