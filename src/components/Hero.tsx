@@ -34,7 +34,7 @@ const Hero = () => {
         <div className="container mx-auto relative z-10 px-[24px]">
           <div className="max-w-4xl mx-auto text-center px-[7px]">
             <div className="mb-8">
-              <h2 className="font-bold mb-6 leading-tight text-black text-center md:text-8xl text-6xl">
+              <h2 className="font-bold mb-6 leading-tight text-black text-center md:text-8xl text-7xl">
                 The missing team behind<br />your growth.
               </h2>
               <p className="text-xl md:text-2xl text-black mb-8 max-w-2xl mx-auto">
