@@ -7,25 +7,25 @@ const Services = () => {
   const services = [
     {
       icon: Target,
-      title: "Lead Generation",
+      title: "Lead generation",
       description: "We deliver leads that actually converts so that you can focus on closing, not chasing",
       backgroundImage: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: TrendingUp,
-      title: "Revenue Generation",
+      title: "Revenue generation",
       description: "We don't stop at leads, we convert, we deliver revenues. We love accountability",
       backgroundImage: "https://images.unsplash.com/photo-1551038247-3d9af20df552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Share2,
-      title: "Social Media Growth",
-      description: "Making Brands visible, valuable & viral - consistently",
+      title: "Social media growth",
+      description: "Making brands visible, valuable & viral - consistently",
       backgroundImage: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Zap,
-      title: "Performance Ads",
+      title: "Performance ads",
       description: "We deliver winning ads to improve your funnel metrics.",
       backgroundImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
@@ -36,7 +36,7 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
-            Our Services
+            Our services
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             End-to-end growth solutions that drive real results

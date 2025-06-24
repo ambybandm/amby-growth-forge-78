@@ -7,18 +7,18 @@ const Benefits = () => {
     {
       id: "business-owner",
       icon: Users,
-      title: "As a Business Owner",
+      title: "As a business owner",
       benefits: [
         {
-          title: "One Partner for Both Marketing & Sales",
+          title: "One partner for both marketing & sales",
           description: "Avoid the headache of managing separate teams — we handle the full growth funnel."
         },
         {
-          title: "Launch New Products with Confidence",
+          title: "Launch new products with confidence",
           description: "Get your first 100 customers — fast. We help you go from idea to sales."
         },
         {
-          title: "Accountability That Drives Revenue",
+          title: "Accountability that drives revenue",
           description: "No fluffy reports — we tie our work to actual sales and business growth."
         }
       ]
@@ -26,18 +26,18 @@ const Benefits = () => {
     {
       id: "growth-lead",
       icon: TrendingUp,
-      title: "As a Growth Team Lead",
+      title: "As a growth team lead",
       benefits: [
         {
-          title: "Scale Without Scaling Internal Headcount",
+          title: "Scale without scaling internal headcount",
           description: "Think of us as your extended team — we plug into your system and deliver."
         },
         {
-          title: "Predictable Lead Flow, No Bottlenecks",
+          title: "Predictable lead flow, no bottlenecks",
           description: "We build reliable lead-gen machines so your sales pipeline stays healthy."
         },
         {
-          title: "Full-Funnel Support to Hit Revenue Targets",
+          title: "Full-funnel support to hit revenue targets",
           description: "From awareness to conversion — we design, execute, and optimize the entire journey."
         }
       ]
@@ -45,18 +45,18 @@ const Benefits = () => {
     {
       id: "marketing-lead",
       icon: Target,
-      title: "As a Marketing Team Lead",
+      title: "As a marketing team lead",
       benefits: [
         {
-          title: "On-Demand Ad Creatives That Perform",
+          title: "On-demand ad creatives that perform",
           description: "No bandwidth? We deliver high-converting performance creatives — fast and on-brand."
         },
         {
-          title: "Ad Strategy to Execution, Done for You",
+          title: "Ad strategy to execution, done for you",
           description: "From message to media plan to delivery — we take care of the whole cycle."
         },
         {
-          title: "Boost Campaign Results Without Burning Out",
+          title: "Boost campaign results without burning out",
           description: "We help you hit KPIs without overstretching your internal team or compromising quality"
         }
       ]
@@ -68,7 +68,7 @@ const Benefits = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
-            How You Can Benefit
+            How you can benefit
           </h2>
           <p className="text-xl text-black max-w-2xl mx-auto">
             Tailored solutions for different roles and responsibilities
@@ -82,7 +82,7 @@ const Benefits = () => {
                 <TabsTrigger 
                   key={section.id} 
                   value={section.id}
-                  className="data-[state=active]:bg-black data-[state=active]:text-white text-black py-4 px-6 text-sm font-medium transition-all duration-200 hover:bg-gray-100"
+                  className="data-[state=active]:bg-black data-[state=active]:text-white text-black py-4 px-6 text-base font-medium transition-all duration-200 hover:bg-gray-100"
                 >
                   <section.icon className="h-4 w-4 mr-2" />
                   {section.title}
@@ -98,10 +98,10 @@ const Benefits = () => {
                       <div className="flex items-start">
                         <CheckCircle className="h-6 w-6 mt-1 mr-3 flex-shrink-0 text-black" />
                         <div>
-                          <h4 className="text-lg font-semibold mb-3 text-black">
+                          <h4 className="text-xl font-semibold mb-3 text-black">
                             {benefit.title}
                           </h4>
-                          <p className="leading-relaxed text-gray-600">
+                          <p className="leading-relaxed text-gray-600 text-lg">
                             {benefit.description}
                           </p>
                         </div>

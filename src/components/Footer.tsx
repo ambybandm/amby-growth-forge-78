@@ -20,10 +20,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-black mb-4">Services</h4>
             <ul className="space-y-2 text-gray-600">
-              <li>Lead Generation</li>
-              <li>Revenue Generation</li>
-              <li>Social Media Growth</li>
-              <li>Performance Ads</li>
+              <li>Lead generation</li>
+              <li>Revenue generation</li>
+              <li>Social media growth</li>
+              <li>Performance ads</li>
             </ul>
           </div>
 
@@ -31,11 +31,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-black mb-4">Company</h4>
             <ul className="space-y-2 text-gray-600">
-              <li>About Us</li>
-              <li>Case Studies</li>
+              <li>About us</li>
+              <li>Case studies</li>
               <li>Contact</li>
               <li>Careers</li>
-              <li>Terms and Conditions</li>
+              <li>Terms and conditions</li>
             </ul>
           </div>
         </div>
