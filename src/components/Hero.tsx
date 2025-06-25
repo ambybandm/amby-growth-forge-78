@@ -9,7 +9,7 @@ const Hero = () => {
       <header className="w-full py-6 px-6 border-b border-black">
         <div className="container mx-auto flex items-center justify-between">
           <img 
-            src="/lovable-uploads/3b31874c-0126-4571-b9ae-76a9f757083a.png" 
+            src="/lovable-uploads/e1768634-31db-4374-a138-5b36403ead96.png" 
             alt="Amby" 
             className="h-8"
           />
