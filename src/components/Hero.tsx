@@ -13,7 +13,7 @@ const Hero = () => {
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <div className="flex items-center space-x-4">
-              <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold">
+              <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold">
                 Our services
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -32,7 +32,7 @@ const Hero = () => {
           <div className="max-w-4xl mx-auto text-center px-[7px]">
             <div className="mb-8">
               <h2 className="font-bold mb-6 leading-tight text-black text-center md:text-8xl text-7xl">
-                The missing team<br />behind your growth.
+                The missing team<br />behind<br />your growth.
               </h2>
               <p className="text-xl md:text-2xl text-black mb-8 max-w-2xl mx-auto">
                 Leads. Sales. Content creation.

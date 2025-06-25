@@ -28,13 +28,28 @@ const FounderQuote = () => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        {/* Claim Your Free Growth Audit Section */}
+        <div className="text-center mb-8">
+          <h3 className="text-3xl md:text-4xl font-bold text-black mb-4">
+            Claim your free growth audit
+          </h3>
+          <p className="text-lg text-gray-600 mb-8">
+            Discuss your growth strategy and discover the improvements
+          </p>
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold">
-            Book our service
+            Free growth audit - 30 min session. 30k worth
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+        </div>
+
+        {/* Mission and Core Values Links */}
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 px-8 py-4 text-lg font-semibold bg-transparent">
+            Our mission
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 px-8 py-4 text-lg font-semibold bg-transparent">
-            Free growth audit
+            Our core values
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>

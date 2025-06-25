@@ -42,7 +42,7 @@ const Services = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
             Our services
           </h2>
-          <p className="text-xl text-blue-600 font-semibold max-w-2xl mx-auto">
+          <p className="text-xl text-black font-semibold max-w-2xl mx-auto">
             #DriveRealResults
           </p>
         </div>
@@ -65,7 +65,7 @@ const Services = () => {
                 <p className="text-gray-200 mb-4 leading-relaxed">
                   {service.description}
                 </p>
-                <div className="text-blue-300 text-sm mb-6 font-medium">
+                <div className="text-white text-sm mb-6 font-medium">
                   {service.tags}
                 </div>
                 <Button variant="ghost" className="text-white hover:text-gray-300 p-0 font-semibold">

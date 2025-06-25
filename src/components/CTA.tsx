@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
 const CTA = () => {
   return (
@@ -14,7 +14,7 @@ const CTA = () => {
             Join successful businesses that chose Amby for their growth journey
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-200 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
               Book our service
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -23,6 +23,31 @@ const CTA = () => {
               Free growth audit
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+          </div>
+
+          {/* Contact Information */}
+          <div className="bg-blue-700 rounded-2xl p-8 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+              <div>
+                <h4 className="font-semibold mb-2">Email us:</h4>
+                <p className="text-blue-100">teja@ambymc.com</p>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2">Call us:</h4>
+                <p className="text-blue-100">+91 8333012936</p>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2">Chat us:</h4>
+                <div className="flex items-center">
+                  <MessageCircle className="h-5 w-5 mr-2 text-green-400" />
+                  <span className="text-blue-100 cursor-pointer hover:text-white">WhatsApp</span>
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2">Visit us:</h4>
+                <p className="text-blue-100">Rajapushpa, Financial district, Hyderabad, 500032</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

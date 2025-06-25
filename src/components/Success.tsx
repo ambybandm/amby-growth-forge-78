@@ -1,6 +1,5 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { TrendingUp, Users, DollarSign, Target, Play } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
@@ -41,7 +40,7 @@ const Success = () => {
             Success with Amby
           </h2>
           <p className="text-xl text-black max-w-2xl mx-auto">
-            Real results for real businesses
+            #ResultsSpeakMoreThanWords
           </p>
         </div>
 
@@ -50,9 +49,9 @@ const Success = () => {
           <Card className="mb-12 bg-white border border-gray-200 shadow-lg">
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
-                <Badge className="bg-blue-600 text-white px-4 py-2 text-sm font-semibold mr-4">
+                <span className="text-black text-3xl font-bold mr-4">
                   #RecentProject
-                </Badge>
+                </span>
                 <h3 className="text-3xl font-bold text-black">CodeBegun</h3>
               </div>
               
@@ -73,21 +72,21 @@ const Success = () => {
                     <h4 className="text-xl font-semibold text-black mb-6">Key highlights:</h4>
                     <div className="space-y-4">
                       <div className="flex items-start">
-                        <Users className="h-6 w-6 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                        <Users className="h-6 w-6 text-black mr-3 mt-1 flex-shrink-0" />
                         <div>
                           <div className="text-2xl font-bold text-black mb-1">4</div>
                           <p className="text-gray-700">Full batches admissions closed in just 1.5 months</p>
                         </div>
                       </div>
                       <div className="flex items-start">
-                        <DollarSign className="h-6 w-6 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                        <DollarSign className="h-6 w-6 text-black mr-3 mt-1 flex-shrink-0" />
                         <div>
                           <div className="text-2xl font-bold text-black mb-1">1/5th</div>
                           <p className="text-gray-700">Acquired customers at 1/5th of market avg cost</p>
                         </div>
                       </div>
                       <div className="flex items-start">
-                        <Target className="h-6 w-6 text-blue-600 mr-3 mt-1 flex-shrink-0" />
+                        <Target className="h-6 w-6 text-black mr-3 mt-1 flex-shrink-0" />
                         <div>
                           <div className="text-2xl font-bold text-black mb-1">1/4th</div>
                           <p className="text-gray-700">Generated leads at 1/4th of market avg cost</p>
