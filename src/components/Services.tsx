@@ -9,24 +9,28 @@ const Services = () => {
       icon: Target,
       title: "Lead generation",
       description: "We deliver leads that actually converts so that you can focus on closing, not chasing",
+      tags: "#PaidCampaigns #MetaAds #GoogleAds #AdCreatives #LandingPage #LeadTracking",
       backgroundImage: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: TrendingUp,
       title: "Revenue generation",
       description: "We don't stop at leads, we convert, we deliver revenues. We love accountability",
+      tags: "#LeadGeneration #SalesScripts #SalesWebinars #ConversionOptimization #FullFunnelExecution",
       backgroundImage: "https://images.unsplash.com/photo-1551038247-3d9af20df552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Share2,
       title: "Social media growth",
       description: "Making brands visible, valuable & viral - consistently",
+      tags: "#PageManagement #PersonalBranding #ContentCalendar #ReelsAndShorts #AIContentCreation",
       backgroundImage: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Zap,
-      title: "Performance ads",
+      title: "Winning ad creatives",
       description: "We deliver winning ads to improve your funnel metrics.",
+      tags: "#AdsStrategy #HighConversionAds #VideoAds #PosterAds",
       backgroundImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
@@ -38,8 +42,8 @@ const Services = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
             Our services
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            End-to-end growth solutions that drive real results
+          <p className="text-xl text-blue-600 font-semibold max-w-2xl mx-auto">
+            #DriveRealResults
           </p>
         </div>
 
@@ -58,9 +62,12 @@ const Services = () => {
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {service.title}
                 </h3>
-                <p className="text-gray-200 mb-6 leading-relaxed">
+                <p className="text-gray-200 mb-4 leading-relaxed">
                   {service.description}
                 </p>
+                <div className="text-blue-300 text-sm mb-6 font-medium">
+                  {service.tags}
+                </div>
                 <Button variant="ghost" className="text-white hover:text-gray-300 p-0 font-semibold">
                   Know more
                   <ArrowRight className="ml-2 h-4 w-4" />

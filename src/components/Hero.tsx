@@ -1,7 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+
 const Hero = () => {
-  return <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
+  return (
+    <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
       {/* Header */}
       <header className="w-full py-6 px-6 border-b border-black">
         <div className="container mx-auto flex items-center justify-between">
@@ -9,18 +12,12 @@ const Hero = () => {
           
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <div className="flex items-center space-x-6 text-black">
-              <span className="hover:text-gray-600 cursor-pointer">Lead generation</span>
-              <span className="hover:text-gray-600 cursor-pointer">Revenue generation</span>
-              <span className="hover:text-gray-600 cursor-pointer">Social media growth</span>
-              <span className="hover:text-gray-600 cursor-pointer">Performance ads</span>
-            </div>
             <div className="flex items-center space-x-4">
-              <Button size="sm" className="bg-black hover:bg-gray-800 text-white font-semibold">
-                Book our service
+              <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold">
+                Our services
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold">
+              <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold">
                 Get in touch
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -35,7 +32,7 @@ const Hero = () => {
           <div className="max-w-4xl mx-auto text-center px-[7px]">
             <div className="mb-8">
               <h2 className="font-bold mb-6 leading-tight text-black text-center md:text-8xl text-7xl">
-                The missing team behind<br />your growth.
+                The missing team<br />behind your growth.
               </h2>
               <p className="text-xl md:text-2xl text-black mb-8 max-w-2xl mx-auto">
                 Leads. Sales. Content creation.
@@ -43,12 +40,12 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-8 py-4 text-lg font-semibold">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold">
                 Book our service
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-black hover:text-white px-8 py-4 text-lg font-semibold">
-                Free strategy consultation
+              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 px-8 py-4 text-lg font-semibold">
+                Free growth audit
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -70,6 +67,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

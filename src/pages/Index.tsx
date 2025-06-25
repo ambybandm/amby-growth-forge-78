@@ -3,8 +3,8 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Benefits from "@/components/Benefits";
 import Success from "@/components/Success";
-import AboutUs from "@/components/AboutUs";
 import WhyAmby from "@/components/WhyAmby";
+import FounderQuote from "@/components/FounderQuote";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -15,8 +15,8 @@ const Index = () => {
       <Services />
       <Benefits />
       <Success />
-      <AboutUs />
       <WhyAmby />
+      <FounderQuote />
       <CTA />
       <Footer />
     </div>
