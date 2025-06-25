@@ -30,28 +30,51 @@ const FounderQuote = () => {
 
         {/* Claim Your Free Growth Audit Section */}
         <div className="text-center mb-8">
-          <h3 className="text-3xl md:text-4xl font-bold text-black mb-4">
-            Claim your free growth audit
-          </h3>
+          <div className="relative inline-block mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold text-black">
+              Claim your free growth audit
+            </h3>
+            <svg 
+              className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-full max-w-md h-3" 
+              viewBox="0 0 300 12" 
+              fill="none"
+            >
+              <path 
+                d="M10 8c50-4 100-6 150-2s100 6 130 2" 
+                stroke="#3B82F6" 
+                strokeWidth="3" 
+                fill="none"
+                strokeLinecap="round"
+              />
+            </svg>
+          </div>
           <p className="text-lg text-gray-600 mb-8">
-            Discuss your growth strategy and discover the improvements
+            Discuss your growth strategy and challenges and listen to our unique solutions
           </p>
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold">
-            Free growth audit - 30 min session. 30k worth
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold mb-4">
+            Free growth audit
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
+          <div className="text-sm text-gray-600 space-y-1">
+            <p>• 30 min discussion</p>
+            <p>• 30k worth</p>
+          </div>
         </div>
 
         {/* Mission and Core Values Links */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 px-8 py-4 text-lg font-semibold bg-transparent">
+          <span 
+            className="text-black hover:text-blue-600 cursor-pointer text-lg font-semibold underline decoration-2 underline-offset-4 hover:decoration-blue-600 transition-colors"
+            onClick={() => console.log('Navigate to Our mission')}
+          >
             Our mission
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 px-8 py-4 text-lg font-semibold bg-transparent">
+          </span>
+          <span 
+            className="text-black hover:text-blue-600 cursor-pointer text-lg font-semibold underline decoration-2 underline-offset-4 hover:decoration-blue-600 transition-colors"
+            onClick={() => console.log('Navigate to Our core values')}
+          >
             Our core values
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          </span>
         </div>
       </div>
     </section>

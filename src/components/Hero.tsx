@@ -8,16 +8,20 @@ const Hero = () => {
       {/* Header */}
       <header className="w-full py-6 px-6 border-b border-black">
         <div className="container mx-auto flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-black">AMBY</h1>
+          <img 
+            src="/lovable-uploads/3b31874c-0126-4571-b9ae-76a9f757083a.png" 
+            alt="Amby" 
+            className="h-8"
+          />
           
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <div className="flex items-center space-x-4">
-              <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold">
-                Our services
+              <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold bg-transparent">
+                Our Services
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold">
+              <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold bg-transparent">
                 Get in touch
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -44,7 +48,7 @@ const Hero = () => {
                 Book our service
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 px-8 py-4 text-lg font-semibold">
+              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 px-8 py-4 text-lg font-semibold bg-transparent">
                 Free growth audit
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

@@ -9,31 +9,36 @@ const Services = () => {
       icon: Target,
       title: "Lead generation",
       description: "We deliver leads that actually converts so that you can focus on closing, not chasing",
-      tags: "#PaidCampaigns #MetaAds #GoogleAds #AdCreatives #LandingPage #LeadTracking",
+      tags: ["#PaidCampaigns", "#MetaAds", "#GoogleAds", "#AdCreatives", "#LandingPage", "#LeadTracking"],
       backgroundImage: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: TrendingUp,
       title: "Revenue generation",
       description: "We don't stop at leads, we convert, we deliver revenues. We love accountability",
-      tags: "#LeadGeneration #SalesScripts #SalesWebinars #ConversionOptimization #FullFunnelExecution",
+      tags: ["#LeadGeneration", "#SalesScripts", "#SalesWebinars", "#ConversionOptimization", "#FullFunnelExecution"],
       backgroundImage: "https://images.unsplash.com/photo-1551038247-3d9af20df552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Share2,
       title: "Social media growth",
       description: "Making brands visible, valuable & viral - consistently",
-      tags: "#PageManagement #PersonalBranding #ContentCalendar #ReelsAndShorts #AIContentCreation",
+      tags: ["#PageManagement", "#PersonalBranding", "#ContentCalendar", "#ReelsAndShorts", "#AIContentCreation"],
       backgroundImage: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       icon: Zap,
       title: "Winning ad creatives",
       description: "We deliver winning ads to improve your funnel metrics.",
-      tags: "#AdsStrategy #HighConversionAds #VideoAds #PosterAds",
+      tags: ["#AdsStrategy", "#HighConversionAds", "#VideoAds", "#PosterAds"],
       backgroundImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
+
+  const handleServiceClick = (title: string) => {
+    // Placeholder for future navigation
+    console.log(`Navigating to service: ${title}`);
+  };
 
   return (
     <section className="py-20 bg-gray-50">
@@ -49,7 +54,11 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 bg-white relative overflow-hidden">
+            <Card 
+              key={index} 
+              className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 bg-white relative overflow-hidden cursor-pointer"
+              onClick={() => handleServiceClick(service.title)}
+            >
               <div 
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${service.backgroundImage})` }}
@@ -62,11 +71,18 @@ const Services = () => {
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {service.title}
                 </h3>
-                <p className="text-gray-200 mb-4 leading-relaxed">
+                <p className="text-gray-200 mb-6 leading-relaxed">
                   {service.description}
                 </p>
-                <div className="text-white text-sm mb-6 font-medium">
-                  {service.tags}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {service.tags.map((tag, tagIndex) => (
+                    <span 
+                      key={tagIndex}
+                      className="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-sm font-medium backdrop-blur-sm"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
                 <Button variant="ghost" className="text-white hover:text-gray-300 p-0 font-semibold">
                   Know more

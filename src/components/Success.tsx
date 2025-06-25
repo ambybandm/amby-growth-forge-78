@@ -49,47 +49,47 @@ const Success = () => {
           <Card className="mb-12 bg-white border border-gray-200 shadow-lg">
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
-                <span className="text-black text-3xl font-bold mr-4">
+                <span className="text-black text-4xl font-bold mr-4">
                   #RecentProject
                 </span>
-                <h3 className="text-3xl font-bold text-black">CodeBegun</h3>
+                <h3 className="text-4xl font-bold text-black">CodeBegun</h3>
               </div>
               
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Left Column - Project Info */}
                 <div>
                   <div className="mb-8">
-                    <h4 className="text-xl font-semibold text-black mb-4">Service provided:</h4>
+                    <h4 className="text-2xl font-semibold text-black mb-4">Service provided:</h4>
                     <p className="text-black leading-relaxed text-lg mb-4">
                       Offered revenue generation service<br />
-                      <span className="text-blue-600 font-medium">
+                      <span className="text-black font-medium">
                         #GeneratedLeads #HandledSales #ConvertedLeads #ConductedWebinars #DeliveredRevenues
                       </span>
                     </p>
                   </div>
 
                   <div>
-                    <h4 className="text-xl font-semibold text-black mb-6">Key highlights:</h4>
-                    <div className="space-y-4">
+                    <h4 className="text-2xl font-semibold text-black mb-6">Key highlights:</h4>
+                    <div className="space-y-6">
                       <div className="flex items-start">
                         <Users className="h-6 w-6 text-black mr-3 mt-1 flex-shrink-0" />
                         <div>
-                          <div className="text-2xl font-bold text-black mb-1">4</div>
-                          <p className="text-gray-700">Full batches admissions closed in just 1.5 months</p>
+                          <div className="text-3xl font-bold text-black mb-1">4</div>
+                          <p className="text-gray-700 text-lg">Full batches admissions closed in just 1.5 months</p>
                         </div>
                       </div>
                       <div className="flex items-start">
                         <DollarSign className="h-6 w-6 text-black mr-3 mt-1 flex-shrink-0" />
                         <div>
-                          <div className="text-2xl font-bold text-black mb-1">1/5th</div>
-                          <p className="text-gray-700">Acquired customers at 1/5th of market avg cost</p>
+                          <div className="text-3xl font-bold text-black mb-1">1/5th</div>
+                          <p className="text-gray-700 text-lg">Acquired customers at 1/5th of market avg cost</p>
                         </div>
                       </div>
                       <div className="flex items-start">
                         <Target className="h-6 w-6 text-black mr-3 mt-1 flex-shrink-0" />
                         <div>
-                          <div className="text-2xl font-bold text-black mb-1">1/4th</div>
-                          <p className="text-gray-700">Generated leads at 1/4th of market avg cost</p>
+                          <div className="text-3xl font-bold text-black mb-1">1/4th</div>
+                          <p className="text-gray-700 text-lg">Generated leads at 1/4th of market avg cost</p>
                         </div>
                       </div>
                     </div>
@@ -99,7 +99,7 @@ const Success = () => {
                 {/* Right Column - Media Collage */}
                 <div className="space-y-4">
                   <div 
-                    className="bg-black text-white p-6 cursor-pointer hover:bg-gray-800 transition-all duration-300 w-full aspect-video flex flex-col items-center justify-center border border-black rounded-lg relative overflow-hidden"
+                    className="bg-black text-white p-6 cursor-pointer hover:bg-gray-800 transition-all duration-300 w-full aspect-video flex flex-col items-center justify-center border border-black rounded-lg relative overflow-hidden h-64"
                     onClick={handleVideoClick}
                   >
                     <img 
@@ -108,7 +108,7 @@ const Success = () => {
                       className="absolute inset-0 w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                      <Play className="h-16 w-16 text-white" />
+                      <Play className="h-20 w-20 text-white" />
                     </div>
                   </div>
 
@@ -116,12 +116,12 @@ const Success = () => {
                     <img 
                       src="/lovable-uploads/3511d400-61fa-43ff-a2fd-290b363961e7.png" 
                       alt="CodeBegun team meeting" 
-                      className="w-full h-32 object-cover border border-gray-200 rounded"
+                      className="w-full h-40 object-cover border border-gray-200 rounded"
                     />
                     <img 
                       src="/lovable-uploads/659b5bf7-c858-4e82-b7cc-f4c004c5e7d0.png" 
                       alt="CodeBegun celebration event" 
-                      className="w-full h-32 object-cover border border-gray-200 rounded"
+                      className="w-full h-40 object-cover border border-gray-200 rounded"
                     />
                   </div>
                 </div>

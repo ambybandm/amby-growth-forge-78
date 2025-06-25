@@ -26,27 +26,22 @@ const CTA = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="bg-blue-700 rounded-2xl p-8 max-w-3xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-              <div>
-                <h4 className="font-semibold mb-2">Email us:</h4>
-                <p className="text-blue-100">teja@ambymc.com</p>
+          <div className="text-center">
+            <div className="flex flex-wrap justify-center items-center gap-6 text-white">
+              <span className="text-blue-100">
+                <span className="font-semibold">Email us:</span> teja@ambymc.com
+              </span>
+              <span className="text-blue-100">
+                <span className="font-semibold">Call us:</span> +91 8333012936
+              </span>
+              <div className="flex items-center">
+                <span className="font-semibold mr-2">Chat us:</span>
+                <MessageCircle className="h-5 w-5 mr-2 text-green-400" />
+                <span className="text-blue-100 cursor-pointer hover:text-white">WhatsApp</span>
               </div>
-              <div>
-                <h4 className="font-semibold mb-2">Call us:</h4>
-                <p className="text-blue-100">+91 8333012936</p>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">Chat us:</h4>
-                <div className="flex items-center">
-                  <MessageCircle className="h-5 w-5 mr-2 text-green-400" />
-                  <span className="text-blue-100 cursor-pointer hover:text-white">WhatsApp</span>
-                </div>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">Visit us:</h4>
-                <p className="text-blue-100">Rajapushpa, Financial district, Hyderabad, 500032</p>
-              </div>
+              <span className="text-blue-100">
+                <span className="font-semibold">Visit us:</span> Rajapushpa, Financial district, Hyderabad, 500032
+              </span>
             </div>
           </div>
         </div>
