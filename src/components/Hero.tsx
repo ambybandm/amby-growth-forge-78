@@ -11,7 +11,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/e1768634-31db-4374-a138-5b36403ead96.png" 
             alt="Amby" 
-            className="h-8"
+            className="h-12 w-auto"
           />
           
           {/* Navigation */}
