@@ -1,4 +1,3 @@
-
 import { Rocket, Settings, BarChart3, Flame } from "lucide-react";
 
 const WhyAmby = () => {
@@ -23,8 +22,8 @@ const WhyAmby = () => {
     },
     {
       icon: Flame,
-      title: "We're new, hungry & obsessed with results",
-      description: "🔥 We're New, Hungry \nWe're not riding on legacy — we're earning our name by delivering real outcomes, faster with our expertise",
+      title: "We're new so hungry",
+      description: "We're not riding on legacy — we're earning our name by delivering real outcomes, faster with our expertise",
       color: "text-white"
     }
   ];

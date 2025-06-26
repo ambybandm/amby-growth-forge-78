@@ -1,5 +1,13 @@
 
+import { useNavigate } from "react-router-dom";
+
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path: string) => {
+    navigate(path);
+  };
+
   return (
     <footer className="bg-white py-12 border-t border-gray-200 font-lexend">
       <div className="container mx-auto px-6">
@@ -7,9 +15,6 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold text-black mb-4">AMBY</h3>
-            <p className="text-gray-600 mb-4 max-w-md">
-              The missing team behind your growth. We deliver leads, sales, and content creation to accelerate your business.
-            </p>
             <div className="space-y-2 text-gray-600">
               <p>📧 teja@ambymc.com</p>
               <p>📞 +91 8333012936</p>
@@ -20,10 +25,30 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-black mb-4">Services</h4>
             <ul className="space-y-2 text-gray-600">
-              <li>Lead generation</li>
-              <li>Revenue generation</li>
-              <li>Social media growth</li>
-              <li>Performance ads</li>
+              <li 
+                className="hover:text-black cursor-pointer"
+                onClick={() => handleNavigation('/lead-generation')}
+              >
+                Lead generation
+              </li>
+              <li 
+                className="hover:text-black cursor-pointer"
+                onClick={() => handleNavigation('/revenue-generation')}
+              >
+                Revenue generation
+              </li>
+              <li 
+                className="hover:text-black cursor-pointer"
+                onClick={() => handleNavigation('/social-media-growth')}
+              >
+                Social media growth
+              </li>
+              <li 
+                className="hover:text-black cursor-pointer"
+                onClick={() => handleNavigation('/winning-ad-creatives')}
+              >
+                Performance ads
+              </li>
             </ul>
           </div>
 
@@ -31,11 +56,26 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-black mb-4">Company</h4>
             <ul className="space-y-2 text-gray-600">
-              <li>About us</li>
-              <li>Case studies</li>
-              <li>Contact</li>
-              <li>Careers</li>
-              <li>Terms and conditions</li>
+              <li 
+                className="hover:text-black cursor-pointer"
+                onClick={() => handleNavigation('/about-us')}
+              >
+                About us
+              </li>
+              <li className="text-gray-400">Case studies</li>
+              <li className="text-gray-400">Contact</li>
+              <li 
+                className="hover:text-black cursor-pointer"
+                onClick={() => handleNavigation('/careers')}
+              >
+                Careers
+              </li>
+              <li 
+                className="hover:text-black cursor-pointer"
+                onClick={() => handleNavigation('/terms-and-conditions')}
+              >
+                Terms and conditions
+              </li>
             </ul>
           </div>
         </div>

@@ -1,8 +1,23 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const FounderQuote = () => {
+  const navigate = useNavigate();
+
+  const handleFreeAudit = () => {
+    window.open('https://calendly.com/ambybandm/schedule-a-call', '_blank');
+  };
+
+  const handleNavigate = (section: string) => {
+    if (section === 'Our mission') {
+      navigate('/our-mission');
+    } else if (section === 'Our core values') {
+      navigate('/our-core-values');
+    }
+  };
+
   return (
     <section className="py-20 bg-white text-black font-lexend">
       <div className="container mx-auto px-6">
@@ -26,13 +41,13 @@ const FounderQuote = () => {
                 <div className="flex flex-col sm:flex-row gap-6 text-left">
                   <span 
                     className="text-black hover:text-blue-600 cursor-pointer text-lg font-semibold underline decoration-2 underline-offset-4 hover:decoration-blue-600 transition-colors"
-                    onClick={() => console.log('Navigate to Our mission')}
+                    onClick={() => handleNavigate('Our mission')}
                   >
                     Our mission
                   </span>
                   <span 
                     className="text-black hover:text-blue-600 cursor-pointer text-lg font-semibold underline decoration-2 underline-offset-4 hover:decoration-blue-600 transition-colors"
-                    onClick={() => console.log('Navigate to Our core values')}
+                    onClick={() => handleNavigate('Our core values')}
                   >
                     Our core values
                   </span>
@@ -42,35 +57,33 @@ const FounderQuote = () => {
           </div>
         </div>
 
-        {/* Claim Your Free Growth Audit Section */}
-        <div className="text-center mb-8">
-          <div className="relative inline-block mb-4">
-            <h3 className="text-3xl md:text-4xl font-bold text-black">
+        {/* Redesigned Claim Your Free Growth Audit Section */}
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-3xl p-12 text-center border border-blue-100">
+          <div className="max-w-2xl mx-auto">
+            <h3 className="text-3xl md:text-4xl font-bold text-black mb-4">
               Claim your free growth audit
             </h3>
-            <svg 
-              className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-full max-w-md h-3" 
-              viewBox="0 0 300 12" 
-              fill="none"
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Discuss your growth strategy and challenges and listen to our unique solutions
+            </p>
+            <Button 
+              size="lg" 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 mb-6"
+              onClick={handleFreeAudit}
             >
-              <path 
-                d="M10 8c50-4 100-6 150-2s100 6 130 2" 
-                stroke="#3B82F6" 
-                strokeWidth="3" 
-                fill="none"
-                strokeLinecap="round"
-              />
-            </svg>
-          </div>
-          <p className="text-lg text-gray-600 mb-8">
-            Discuss your growth strategy and challenges and listen to our unique solutions
-          </p>
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold mb-4">
-            Free growth audit
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <div className="text-sm text-gray-600">
-            <p>• 30 min discussion • 30k worth</p>
+              Free growth audit
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            <div className="flex items-center justify-center space-x-8 text-sm text-gray-600">
+              <div className="flex items-center">
+                <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                <span>30 min discussion</span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+                <span>30k worth</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

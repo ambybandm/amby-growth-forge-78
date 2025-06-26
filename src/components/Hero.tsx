@@ -3,6 +3,31 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
+  const scrollToServices = () => {
+    const servicesSection = document.querySelector('section:has(h2:contains("Our services"))') || 
+                           document.querySelector('[id*="services"]') ||
+                           document.querySelector('section:nth-of-type(2)');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToCTA = () => {
+    const ctaSection = document.querySelector('section:has(h2:contains("Ready to accelerate"))') ||
+                      document.querySelector('[class*="bg-black"]');
+    if (ctaSection) {
+      ctaSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleBookService = () => {
+    window.open('https://calendly.com/ambymarcom/30min', '_blank');
+  };
+
+  const handleFreeAudit = () => {
+    window.open('https://calendly.com/ambybandm/schedule-a-call', '_blank');
+  };
+
   return (
     <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
       {/* Header */}
@@ -17,11 +42,21 @@ const Hero = () => {
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <div className="flex items-center space-x-4">
-              <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold bg-transparent">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold bg-transparent"
+                onClick={scrollToServices}
+              >
                 Our Services
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold bg-transparent">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold bg-transparent"
+                onClick={scrollToCTA}
+              >
                 Get in touch
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -44,11 +79,20 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold">
+              <Button 
+                size="lg" 
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold"
+                onClick={handleBookService}
+              >
                 Book our service
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 px-8 py-4 text-lg font-semibold bg-transparent">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 px-8 py-4 text-lg font-semibold bg-transparent"
+                onClick={handleFreeAudit}
+              >
                 Free growth audit
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

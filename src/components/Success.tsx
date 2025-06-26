@@ -2,15 +2,27 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, Users, DollarSign, Target, Play } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { useNavigate } from "react-router-dom";
 
 const Success = () => {
+  const navigate = useNavigate();
+
   const handleVideoClick = () => {
     window.open('https://www.youtube.com/watch?v=DVd0PiOgiEo', '_blank');
   };
 
   const handleCaseStudyClick = (title: string) => {
-    // Placeholder for future case study navigation
-    console.log(`Navigating to case study: ${title}`);
+    const routeMap: { [key: string]: string } = {
+      "Multi-language marketing campaigns": "/case-study/multi-language-campaign",
+      "Educational webinar optimization": "/case-study/educational-webinar-optimization",
+      "High-converting copywriting": "/case-study/high-converting-copywriting",
+      "Conversion-focused website design": "/case-study/conversion-focused-website-design"
+    };
+    
+    const route = routeMap[title];
+    if (route) {
+      navigate(route);
+    }
   };
 
   const caseStudies = [
