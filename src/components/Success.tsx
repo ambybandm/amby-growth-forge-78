@@ -52,6 +52,7 @@ const Success = () => {
                 <span className="text-black text-4xl font-bold mr-4">
                   #RecentProject
                 </span>
+                <span className="text-black text-4xl font-bold mr-4">-</span>
                 <h3 className="text-4xl font-bold text-black">CodeBegun</h3>
               </div>
               
@@ -59,9 +60,9 @@ const Success = () => {
                 {/* Left Column - Project Info */}
                 <div>
                   <div className="mb-8">
-                    <h4 className="text-2xl font-semibold text-black mb-4">Service provided:</h4>
+                    <h4 className="text-2xl font-semibold text-black mb-2">Service provided:</h4>
                     <p className="text-black leading-relaxed text-lg mb-4">
-                      Offered revenue generation service<br />
+                      Revenue generation<br />
                       <span className="text-black font-medium">
                         #GeneratedLeads #HandledSales #ConvertedLeads #ConductedWebinars #DeliveredRevenues
                       </span>
@@ -74,21 +75,21 @@ const Success = () => {
                       <div className="flex items-start">
                         <Users className="h-6 w-6 text-black mr-3 mt-1 flex-shrink-0" />
                         <div>
-                          <div className="text-3xl font-bold text-black mb-1">4</div>
+                          <div className="text-4xl font-bold text-black mb-1">4</div>
                           <p className="text-gray-700 text-lg">Full batches admissions closed in just 1.5 months</p>
                         </div>
                       </div>
                       <div className="flex items-start">
                         <DollarSign className="h-6 w-6 text-black mr-3 mt-1 flex-shrink-0" />
                         <div>
-                          <div className="text-3xl font-bold text-black mb-1">1/5th</div>
+                          <div className="text-4xl font-bold text-black mb-1">1/5th</div>
                           <p className="text-gray-700 text-lg">Acquired customers at 1/5th of market avg cost</p>
                         </div>
                       </div>
                       <div className="flex items-start">
                         <Target className="h-6 w-6 text-black mr-3 mt-1 flex-shrink-0" />
                         <div>
-                          <div className="text-3xl font-bold text-black mb-1">1/4th</div>
+                          <div className="text-4xl font-bold text-black mb-1">1/4th</div>
                           <p className="text-gray-700 text-lg">Generated leads at 1/4th of market avg cost</p>
                         </div>
                       </div>
@@ -103,7 +104,7 @@ const Success = () => {
                     onClick={handleVideoClick}
                   >
                     <img 
-                      src="/lovable-uploads/fec9253f-0534-44b3-9d15-b64bc7f33183.png" 
+                      src="/lovable-uploads/4f88fc2e-9d3b-4ad6-be40-c4cfeeec3230.png" 
                       alt="Video thumbnail" 
                       className="absolute inset-0 w-full h-full object-cover"
                     />

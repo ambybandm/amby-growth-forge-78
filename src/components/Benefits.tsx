@@ -10,16 +10,16 @@ const Benefits = () => {
       title: "As a business owner",
       benefits: [
         {
-          title: "One partner for both marketing & sales",
-          description: "Avoid the headache of managing separate teams — we handle the full growth funnel."
+          title: "Avoid the Headache of Managing Many Teams",
+          description: "No need to deal with different agencies or freelancers — we handle everything from marketing to sales."
         },
         {
-          title: "Launch new products with confidence",
-          description: "Get your first 100 customers — fast. We help you go from idea to sales."
+          title: "Get Your First 1,000 Customers — Fast",
+          description: "Launch your products with confidence & kickstart your business growth"
         },
         {
-          title: "Accountability that drives revenue",
-          description: "No fluffy reports — we tie our work to actual sales and business growth."
+          title: "Avoid Fluffy Reports — Get Real Growth",
+          description: "No agency game. We focus on what truly matters: leads, sales, and revenue"
         }
       ]
     },
@@ -29,16 +29,16 @@ const Benefits = () => {
       title: "As a growth team lead",
       benefits: [
         {
-          title: "Scale without scaling internal headcount",
-          description: "Think of us as your extended team — we plug into your system and deliver."
+          title: "Avoid Content Delays",
+          description: "We deliver videos, designs, and copy on time so your teams & campaigns run smoothly."
         },
         {
-          title: "Predictable lead flow, no bottlenecks",
-          description: "We build reliable lead-gen machines so your sales pipeline stays healthy."
+          title: "Fix Funnel KPIs",
+          description: "If your team can't hit their numbers, we step in, fix it & give KT"
         },
         {
-          title: "Full-funnel support to hit revenue targets",
-          description: "From awareness to conversion — we design, execute, and optimize the entire journey."
+          title: "Don't let limited team size stop your growth",
+          description: "We can be your extended team to reach your growth targets"
         }
       ]
     },
@@ -48,16 +48,16 @@ const Benefits = () => {
       title: "As a marketing team lead",
       benefits: [
         {
-          title: "On-demand ad creatives that perform",
-          description: "No bandwidth? We deliver high-converting performance creatives — fast and on-brand."
+          title: "Get Ad Creatives That Actually Convert",
+          description: "Struggling with poor-performing ads? We deliver creatives that drive real results."
         },
         {
-          title: "Ad strategy to execution, done for you",
-          description: "From message to media plan to delivery — we take care of the whole cycle."
+          title: "Get Creatives On Time, Every Time",
+          description: "Short on bandwidth? We deliver high-quality assets without delays."
         },
         {
-          title: "Boost campaign results without burning out",
-          description: "We help you hit KPIs without overstretching your internal team or compromising quality"
+          title: "Offload Execution, Focus on What Matters",
+          description: "Hand over the work — you lead the strategy, we handle the rest"
         }
       ]
     }
@@ -70,9 +70,6 @@ const Benefits = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
             How you can benefit
           </h2>
-          <p className="text-xl text-black max-w-2xl mx-auto">
-            Tailored solutions for different roles and responsibilities
-          </p>
         </div>
 
         <div className="max-w-6xl mx-auto">

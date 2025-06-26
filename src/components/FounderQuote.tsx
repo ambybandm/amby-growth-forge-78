@@ -20,9 +20,23 @@ const FounderQuote = () => {
                 <blockquote className="text-xl md:text-2xl font-medium italic mb-4 text-black">
                   "It's not about followers, ads, or leads. First, you need a strategy - a clear why and for what."
                 </blockquote>
-                <cite className="text-gray-600 font-semibold">
+                <cite className="text-gray-600 font-semibold mb-4 block">
                   - Teja Undavalli, Founder, Amby
                 </cite>
+                <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                  <span 
+                    className="text-black hover:text-blue-600 cursor-pointer text-lg font-semibold underline decoration-2 underline-offset-4 hover:decoration-blue-600 transition-colors"
+                    onClick={() => console.log('Navigate to Our mission')}
+                  >
+                    Our mission
+                  </span>
+                  <span 
+                    className="text-black hover:text-blue-600 cursor-pointer text-lg font-semibold underline decoration-2 underline-offset-4 hover:decoration-blue-600 transition-colors"
+                    onClick={() => console.log('Navigate to Our core values')}
+                  >
+                    Our core values
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -55,26 +69,9 @@ const FounderQuote = () => {
             Free growth audit
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <div className="text-sm text-gray-600 space-y-1">
-            <p>• 30 min discussion</p>
-            <p>• 30k worth</p>
+          <div className="text-sm text-gray-600">
+            <p>• 30 min discussion • 30k worth</p>
           </div>
-        </div>
-
-        {/* Mission and Core Values Links */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <span 
-            className="text-black hover:text-blue-600 cursor-pointer text-lg font-semibold underline decoration-2 underline-offset-4 hover:decoration-blue-600 transition-colors"
-            onClick={() => console.log('Navigate to Our mission')}
-          >
-            Our mission
-          </span>
-          <span 
-            className="text-black hover:text-blue-600 cursor-pointer text-lg font-semibold underline decoration-2 underline-offset-4 hover:decoration-blue-600 transition-colors"
-            onClick={() => console.log('Navigate to Our core values')}
-          >
-            Our core values
-          </span>
         </div>
       </div>
     </section>

@@ -24,13 +24,13 @@ const WhyAmby = () => {
     {
       icon: Flame,
       title: "We're new, hungry & obsessed with results",
-      description: "We're not riding on legacy — we're earning our name by delivering real outcomes, faster",
+      description: "🔥 We're New, Hungry \nWe're not riding on legacy — we're earning our name by delivering real outcomes, faster with our expertise",
       color: "text-white"
     }
   ];
 
   const highlights = [
-    { number: "9", text: "Years of expertise" },
+    { number: "9", text: "years of industry experience" },
     { number: "4X", text: "Revenue growth" },
     { number: "1/5th", text: "Cost per acquisition" },
     { number: "1 Lakh+", text: "Quality leads generated" },
@@ -41,9 +41,13 @@ const WhyAmby = () => {
     <section className="py-20 bg-gray-900 text-white font-lexend">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">
             Why Amby?
           </h2>
+          
+          <h3 className="text-2xl font-semibold mb-8">
+            Our expertise
+          </h3>
           
           {/* Number Highlights */}
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16">
@@ -65,7 +69,7 @@ const WhyAmby = () => {
                   <h3 className="text-xl font-bold mb-3">
                     {reason.title}
                   </h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-gray-300 leading-relaxed whitespace-pre-line">
                     {reason.description}
                   </p>
                 </div>
