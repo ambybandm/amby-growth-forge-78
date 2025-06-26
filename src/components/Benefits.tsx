@@ -88,7 +88,7 @@ const Benefits = () => {
             </TabsList>
 
             {benefitSections.map((section) => (
-              <TabsContent key={section.id} value={section.id} className="mt-16 md:mt-12">
+              <TabsContent key={section.id} value={section.id} className="mt-24 md:mt-12">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                   {section.benefits.map((benefit, benefitIndex) => (
                     <div key={benefitIndex} className="text-left">
