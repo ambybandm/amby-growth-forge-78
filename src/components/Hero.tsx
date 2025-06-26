@@ -144,8 +144,8 @@ const Hero = () => {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 md:mb-8">
                 Your B2B marketing partner
               </h1>
-              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 md:mb-6 leading-tight text-black text-center py-0 my-0">
-                The missing team<br />behind<br />your growth.
+              <h2 className="text-5xl font-bold mb-4 md:mb-6 leading-tight text-black text-center py-0 my-0">
+                The<br />missing<br />team<br />behind<br />your<br />growth.
               </h2>
               <p className="text-base md:text-xl lg:text-2xl text-black mb-6 md:mb-8 max-w-2xl mx-auto px-px my-[10px]">Leads. Sales. Content creation.</p>
             </div>
