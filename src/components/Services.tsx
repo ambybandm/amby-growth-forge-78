@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Target, TrendingUp, Share2, Zap, ArrowRight } from "lucide-react";
@@ -30,7 +31,7 @@ const Services = () => {
       title: "Winning ad creatives",
       description: "We deliver winning ads to improve your funnel metrics.",
       tags: ["#AdsStrategy", "#HighConversionAds", "#VideoAds", "#PosterAds"],
-      backgroundImage: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      backgroundImage: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
     }
   ];
 
