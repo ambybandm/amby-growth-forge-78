@@ -1,3 +1,4 @@
+
 import { Rocket, Settings, BarChart3, Flame } from "lucide-react";
 
 const WhyAmby = () => {
@@ -48,14 +49,26 @@ const WhyAmby = () => {
             Our expertise
           </h3>
           
-          {/* Number Highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">{highlight.number}</div>
-                <div className="text-gray-300 text-sm">{highlight.text}</div>
-              </div>
-            ))}
+          {/* Number Highlights - Arranged in 2 lines with larger size */}
+          <div className="max-w-4xl mx-auto mb-16">
+            {/* First line - 3 items */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              {highlights.slice(0, 3).map((highlight, index) => (
+                <div key={index} className="text-center">
+                  <div className="text-4xl md:text-5xl font-bold text-white mb-3">{highlight.number}</div>
+                  <div className="text-gray-300 text-base md:text-lg">{highlight.text}</div>
+                </div>
+              ))}
+            </div>
+            {/* Second line - 2 items */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+              {highlights.slice(3).map((highlight, index) => (
+                <div key={index + 3} className="text-center">
+                  <div className="text-4xl md:text-5xl font-bold text-white mb-3">{highlight.number}</div>
+                  <div className="text-gray-300 text-base md:text-lg">{highlight.text}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 

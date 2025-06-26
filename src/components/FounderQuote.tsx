@@ -85,6 +85,10 @@ const FounderQuote = () => {
                 <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
                 <span>30k worth</span>
               </div>
+              <div className="flex items-center">
+                <div className="w-2 h-2 bg-orange-500 rounded-full mr-2"></div>
+                <span>Only 10 slots/month</span>
+              </div>
             </div>
           </div>
         </div>

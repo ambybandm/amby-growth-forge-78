@@ -56,13 +56,15 @@ const CTA = () => {
               </div>
               <div className="text-center">
                 <div className="font-semibold text-sm md:text-base">Chat us</div>
-                <div 
-                  className="text-gray-300 cursor-pointer hover:text-white flex items-center justify-center text-sm md:text-base"
+                <Button 
+                  variant="ghost" 
+                  size="sm"
+                  className="text-gray-300 hover:text-white hover:bg-gray-800 p-2 rounded-lg transition-all duration-200"
                   onClick={handleWhatsApp}
                 >
-                  <MessageCircle className="h-3 w-3 md:h-4 md:w-4 mr-1 text-green-400" />
+                  <MessageCircle className="h-4 w-4 md:h-5 md:w-5 mr-2 text-green-400" />
                   WhatsApp
-                </div>
+                </Button>
               </div>
               <div className="text-center">
                 <div className="font-semibold text-sm md:text-base">Visit us</div>

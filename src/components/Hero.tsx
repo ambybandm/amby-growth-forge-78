@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 const Hero = () => {
@@ -13,6 +14,14 @@ const Hero = () => {
     const ctaSection = document.querySelector('section:has(h2:contains("Ready to accelerate"))') || document.querySelector('[class*="bg-black"]');
     if (ctaSection) {
       ctaSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  };
+  const scrollToCaseStudies = () => {
+    const caseStudiesSection = document.querySelector('section:has(h2:contains("Success with Amby"))') || document.querySelector('[class*="bg-gray-100"]');
+    if (caseStudiesSection) {
+      caseStudiesSection.scrollIntoView({
         behavior: 'smooth'
       });
     }
@@ -35,11 +44,15 @@ const Hero = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <div className="flex items-center space-x-4">
               <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold bg-transparent" onClick={scrollToServices}>
-                Our Services
+                Services
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+              <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold bg-transparent" onClick={scrollToCaseStudies}>
+                Case Studies
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold bg-transparent" onClick={scrollToCTA}>
-                Get in touch
+                Contact Us
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
