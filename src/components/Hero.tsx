@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
-
 const Hero = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const scrollToServices = () => {
@@ -102,8 +101,8 @@ const Hero = () => {
       </header>
 
       {/* Main Hero Content */}
-      <div className="flex-1 flex items-center justify-center px-4 md:px-6 my-[13px]">
-        <div className="container mx-auto relative z-10">
+      <div className="flex-1 flex items-center justify-center px-4 md:px-6 my-[12px]">
+        <div className="container mx-auto relative z-10 my-[21px]">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6 md:mb-8">
               <h2 className="text-5xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight text-black text-center py-0 my-0">
@@ -142,5 +141,4 @@ const Hero = () => {
       </div>
     </section>;
 };
-
 export default Hero;
