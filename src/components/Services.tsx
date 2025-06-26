@@ -1,43 +1,48 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Target, TrendingUp, Share2, Zap, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
+  const navigate = useNavigate();
+  
   const services = [
     {
       icon: Target,
       title: "Lead generation",
       description: "We deliver leads that actually converts so that you can focus on closing, not chasing",
       tags: ["#PaidCampaigns", "#MetaAds", "#GoogleAds", "#AdCreatives", "#LandingPage", "#LeadTracking"],
-      backgroundImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      backgroundImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      route: "/lead-generation"
     },
     {
       icon: TrendingUp,
       title: "Revenue generation",
       description: "We don't stop at leads, we convert, we deliver revenues. We love accountability",
       tags: ["#LeadGeneration", "#SalesScripts", "#SalesWebinars", "#ConversionOptimization", "#FullFunnelExecution"],
-      backgroundImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      backgroundImage: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      route: "/revenue-generation"
     },
     {
       icon: Share2,
       title: "Social media growth",
       description: "Making brands visible, valuable & viral - consistently",
       tags: ["#PageManagement", "#PersonalBranding", "#ContentCalendar", "#ReelsAndShorts", "#AIContentCreation"],
-      backgroundImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      backgroundImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      route: "/social-media-growth"
     },
     {
       icon: Zap,
       title: "Winning ad creatives",
       description: "We deliver winning ads to improve your funnel metrics.",
       tags: ["#AdsStrategy", "#HighConversionAds", "#VideoAds", "#PosterAds"],
-      backgroundImage: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      backgroundImage: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      route: "/winning-ad-creatives"
     }
   ];
 
-  const handleServiceClick = (title: string) => {
-    // Placeholder for future navigation
-    console.log(`Navigating to service: ${title}`);
+  const handleServiceClick = (route: string) => {
+    navigate(route);
   };
 
   return (
@@ -57,7 +62,7 @@ const Services = () => {
             <Card 
               key={index} 
               className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 bg-white relative overflow-hidden cursor-pointer"
-              onClick={() => handleServiceClick(service.title)}
+              onClick={() => handleServiceClick(service.route)}
             >
               <div 
                 className="absolute inset-0 bg-cover bg-center"
