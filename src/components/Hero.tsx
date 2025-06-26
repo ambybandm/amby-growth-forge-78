@@ -26,6 +26,16 @@ const Hero = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const scrollToCaseStudies = () => {
+    const caseStudiesSection = document.querySelector('section:has(h2:contains("Success with Amby"))') || document.querySelector('[class*="bg-gray-100"]');
+    if (caseStudiesSection) {
+      caseStudiesSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   const handleBookService = () => {
     window.open('https://calendly.com/ambymarcom/30min', '_blank');
   };
@@ -50,11 +60,11 @@ const Hero = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold bg-transparent" onClick={scrollToServices}>
+            <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-black hover:text-white hover:border-black font-semibold bg-transparent" onClick={scrollToServices}>
               Our services
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 font-semibold bg-transparent" onClick={scrollToCTA}>
+            <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-black hover:text-white hover:border-black font-semibold bg-transparent" onClick={scrollToCTA}>
               Contact us
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -110,6 +120,12 @@ const Hero = () => {
                 </div>
                 <button 
                   className="w-full text-left py-2 px-4 hover:bg-gray-100 font-medium"
+                  onClick={scrollToCaseStudies}
+                >
+                  Case studies
+                </button>
+                <button 
+                  className="w-full text-left py-2 px-4 hover:bg-gray-100 font-medium"
                   onClick={scrollToCTA}
                 >
                   Contact us
@@ -125,18 +141,21 @@ const Hero = () => {
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6 md:mb-8">
-              <h2 className="font-bold mb-4 md:mb-6 leading-tight text-black text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl py-0 my-0">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 md:mb-8">
+                Your B2B marketing partner
+              </h1>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 md:mb-6 leading-tight text-black text-center py-0 my-0">
                 The missing team<br />behind<br />your growth.
               </h2>
               <p className="text-base md:text-xl lg:text-2xl text-black mb-6 md:mb-8 max-w-2xl mx-auto px-px my-[10px]">Leads. Sales. Content creation.</p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-8 md:mb-12 px-4">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold w-full sm:w-auto" onClick={handleBookService}>
+              <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold w-full sm:w-auto" onClick={handleBookService}>
                 Book our service
                 <ArrowRight className="ml-2 h-4 md:h-5 w-4 md:w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold bg-transparent w-full sm:w-auto" onClick={handleFreeAudit}>
+              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-black hover:text-white hover:border-black px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold bg-transparent w-full sm:w-auto" onClick={handleFreeAudit}>
                 Free growth audit
                 <ArrowRight className="ml-2 h-4 md:h-5 w-4 md:w-5" />
               </Button>
