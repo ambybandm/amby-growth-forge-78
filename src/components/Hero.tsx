@@ -105,7 +105,7 @@ const Hero = () => {
         <div className="container mx-auto relative z-10 my-[21px]">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6 md:mb-8">
-              <h2 className="text-5xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight text-black text-center py-0 my-0">
+              <h2 className="md:text-6xl font-bold mb-4 md:mb-6 leading-tight text-black text-center py-0 my-0 text-6xl">
                 The missing team behind your growth.
               </h2>
               <p className="text-base md:text-xl lg:text-2xl text-black mb-6 md:mb-8 max-w-2xl mx-auto px-px my-[10px]">Leads. Sales. Content creation.</p>
