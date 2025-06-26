@@ -14,7 +14,8 @@ const Services = () => {
       description: "We deliver leads that actually converts so that you can focus on closing, not chasing",
       tags: ["#PaidCampaigns", "#MetaAds", "#GoogleAds", "#AdCreatives", "#LandingPage", "#LeadTracking"],
       backgroundImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      route: "/lead-generation"
+      route: "/lead-generation",
+      accentColor: "blue"
     },
     {
       icon: TrendingUp,
@@ -22,7 +23,8 @@ const Services = () => {
       description: "We don't stop at leads, we convert, we deliver revenues. We love accountability",
       tags: ["#LeadGeneration", "#SalesScripts", "#SalesWebinars", "#ConversionOptimization", "#FullFunnelExecution"],
       backgroundImage: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      route: "/revenue-generation"
+      route: "/revenue-generation",
+      accentColor: "green"
     },
     {
       icon: Share2,
@@ -30,7 +32,8 @@ const Services = () => {
       description: "Making brands visible, valuable & viral - consistently",
       tags: ["#PageManagement", "#PersonalBranding", "#ContentCalendar", "#ReelsAndShorts", "#AIContentCreation"],
       backgroundImage: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      route: "/social-media-growth"
+      route: "/social-media-growth",
+      accentColor: "purple"
     },
     {
       icon: Zap,
@@ -38,7 +41,8 @@ const Services = () => {
       description: "We deliver winning ads to improve your funnel metrics.",
       tags: ["#AdsStrategy", "#HighConversionAds", "#VideoAds", "#PosterAds"],
       backgroundImage: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      route: "/winning-ad-creatives"
+      route: "/winning-ad-creatives",
+      accentColor: "orange"
     }
   ];
 
@@ -53,7 +57,7 @@ const Services = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
             Our services
           </h2>
-          <p className="text-lg md:text-xl text-black font-semibold max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-blue-600 font-semibold max-w-2xl mx-auto">
             #DriveRealResults
           </p>
         </div>
@@ -71,8 +75,8 @@ const Services = () => {
               />
               <div className="absolute inset-0 bg-black bg-opacity-60" />
               <CardContent className="p-6 md:p-8 relative z-10">
-                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="h-6 w-6 md:h-8 md:w-8 text-black" />
+                <div className={`w-12 h-12 md:w-16 md:h-16 rounded-full bg-${service.accentColor}-600 flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <service.icon className="h-6 w-6 md:h-8 md:w-8 text-white" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">
                   {service.title}
@@ -90,7 +94,7 @@ const Services = () => {
                     </span>
                   ))}
                 </div>
-                <Button variant="ghost" className="text-white hover:text-gray-300 p-0 font-semibold text-sm md:text-base">
+                <Button variant="ghost" className="text-white hover:text-blue-300 p-0 font-semibold text-sm md:text-base">
                   Know more
                   <ArrowRight className="ml-2 h-3 w-3 md:h-4 md:w-4" />
                 </Button>
