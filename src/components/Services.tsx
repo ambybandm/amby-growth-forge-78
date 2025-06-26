@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Target, TrendingUp, Share2, Zap, ArrowRight } from "lucide-react";
@@ -46,18 +47,18 @@ const Services = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+    <section className="py-12 md:py-20 bg-gray-50">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
             Our services
           </h2>
-          <p className="text-xl text-black font-semibold max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-black font-semibold max-w-2xl mx-auto">
             #DriveRealResults
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <Card 
               key={index} 
@@ -69,29 +70,29 @@ const Services = () => {
                 style={{ backgroundImage: `url(${service.backgroundImage})` }}
               />
               <div className="absolute inset-0 bg-black bg-opacity-60" />
-              <CardContent className="p-8 relative z-10">
-                <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="h-8 w-8 text-black" />
+              <CardContent className="p-6 md:p-8 relative z-10">
+                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <service.icon className="h-6 w-6 md:h-8 md:w-8 text-black" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">
                   {service.title}
                 </h3>
-                <p className="text-gray-200 mb-6 leading-relaxed">
+                <p className="text-gray-200 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
                   {service.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-4 md:mb-6">
                   {service.tags.map((tag, tagIndex) => (
                     <span 
                       key={tagIndex}
-                      className="bg-white bg-opacity-20 text-white px-3 py-1 rounded-full text-sm font-medium backdrop-blur-sm"
+                      className="bg-white bg-opacity-20 text-white px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-medium backdrop-blur-sm"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <Button variant="ghost" className="text-white hover:text-gray-300 p-0 font-semibold">
+                <Button variant="ghost" className="text-white hover:text-gray-300 p-0 font-semibold text-sm md:text-base">
                   Know more
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-2 h-3 w-3 md:h-4 md:w-4" />
                 </Button>
               </CardContent>
             </Card>
