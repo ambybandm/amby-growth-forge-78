@@ -1,11 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
-
 const Hero = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   const scrollToServices = () => {
     const servicesSection = document.querySelector('section:has(h2:contains("Our services"))') || document.querySelector('[id*="services"]') || document.querySelector('section:nth-of-type(2)');
     if (servicesSection) {
@@ -15,7 +12,6 @@ const Hero = () => {
     }
     setIsMobileMenuOpen(false);
   };
-
   const scrollToCTA = () => {
     const ctaSection = document.querySelector('section:has(h2:contains("Ready to accelerate"))') || document.querySelector('[class*="bg-black"]');
     if (ctaSection) {
@@ -25,7 +21,6 @@ const Hero = () => {
     }
     setIsMobileMenuOpen(false);
   };
-
   const scrollToCaseStudies = () => {
     const caseStudiesSection = document.querySelector('section:has(h2:contains("Success with Amby"))') || document.querySelector('[class*="bg-gray-100"]');
     if (caseStudiesSection) {
@@ -35,22 +30,17 @@ const Hero = () => {
     }
     setIsMobileMenuOpen(false);
   };
-
   const handleBookService = () => {
     window.open('https://calendly.com/ambymarcom/30min', '_blank');
   };
-
   const handleFreeAudit = () => {
     window.open('https://calendly.com/ambybandm/schedule-a-call', '_blank');
   };
-
   const handleServiceNavigation = (path: string) => {
     window.location.href = path;
     setIsMobileMenuOpen(false);
   };
-
-  return (
-    <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
+  return <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
       {/* Header */}
       <header className="w-full py-4 md:py-6 px-4 md:px-6 border-b border-black relative">
         <div className="container mx-auto flex items-center justify-between">
@@ -71,69 +61,43 @@ const Hero = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
+          <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-black z-50">
+        {isMobileMenuOpen && <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-black z-50">
             <div className="container mx-auto px-4 py-4">
               <div className="space-y-4">
                 <div>
-                  <button 
-                    className="w-full text-left py-2 px-4 hover:bg-gray-100 font-medium"
-                    onClick={scrollToServices}
-                  >
+                  <button className="w-full text-left py-2 px-4 hover:bg-gray-100 font-medium" onClick={scrollToServices}>
                     Our services
                   </button>
                   <div className="ml-4 space-y-2 mt-2">
-                    <button 
-                      className="block w-full text-left py-1 px-4 text-sm text-gray-600 hover:text-black"
-                      onClick={() => handleServiceNavigation('/lead-generation')}
-                    >
+                    <button className="block w-full text-left py-1 px-4 text-sm text-gray-600 hover:text-black" onClick={() => handleServiceNavigation('/lead-generation')}>
                       Lead generation
                     </button>
-                    <button 
-                      className="block w-full text-left py-1 px-4 text-sm text-gray-600 hover:text-black"
-                      onClick={() => handleServiceNavigation('/revenue-generation')}
-                    >
+                    <button className="block w-full text-left py-1 px-4 text-sm text-gray-600 hover:text-black" onClick={() => handleServiceNavigation('/revenue-generation')}>
                       Revenue generation
                     </button>
-                    <button 
-                      className="block w-full text-left py-1 px-4 text-sm text-gray-600 hover:text-black"
-                      onClick={() => handleServiceNavigation('/social-media-growth')}
-                    >
+                    <button className="block w-full text-left py-1 px-4 text-sm text-gray-600 hover:text-black" onClick={() => handleServiceNavigation('/social-media-growth')}>
                       Social media growth
                     </button>
-                    <button 
-                      className="block w-full text-left py-1 px-4 text-sm text-gray-600 hover:text-black"
-                      onClick={() => handleServiceNavigation('/winning-ad-creatives')}
-                    >
+                    <button className="block w-full text-left py-1 px-4 text-sm text-gray-600 hover:text-black" onClick={() => handleServiceNavigation('/winning-ad-creatives')}>
                       Winning ad creatives
                     </button>
                   </div>
                 </div>
-                <button 
-                  className="w-full text-left py-2 px-4 hover:bg-gray-100 font-medium"
-                  onClick={scrollToCaseStudies}
-                >
+                <button className="w-full text-left py-2 px-4 hover:bg-gray-100 font-medium" onClick={scrollToCaseStudies}>
                   Case studies
                 </button>
-                <button 
-                  className="w-full text-left py-2 px-4 hover:bg-gray-100 font-medium"
-                  onClick={scrollToCTA}
-                >
+                <button className="w-full text-left py-2 px-4 hover:bg-gray-100 font-medium" onClick={scrollToCTA}>
                   Contact us
                 </button>
               </div>
             </div>
-          </div>
-        )}
+          </div>}
       </header>
 
       {/* Main Hero Content */}
@@ -144,7 +108,7 @@ const Hero = () => {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 md:mb-8">
                 Your B2B marketing partner
               </h1>
-              <h2 className="text-5xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight text-black text-center py-0 my-0">
+              <h2 className="text-5xl font-bold mb-4 md:mb-6 leading-tight text-black text-center py-0 my-0 md:text-7xl">
                 The missing team behind your growth.
               </h2>
               <p className="text-base md:text-xl lg:text-2xl text-black mb-6 md:mb-8 max-w-2xl mx-auto px-px my-[10px]">Leads. Sales. Content creation.</p>
@@ -178,8 +142,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
