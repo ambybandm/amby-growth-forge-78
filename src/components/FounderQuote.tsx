@@ -23,7 +23,7 @@ const FounderQuote = () => {
                 <cite className="text-gray-600 font-semibold mb-4 block">
                   - Teja Undavalli, Founder, Amby
                 </cite>
-                <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <div className="flex flex-col sm:flex-row gap-6 text-left">
                   <span 
                     className="text-black hover:text-blue-600 cursor-pointer text-lg font-semibold underline decoration-2 underline-offset-4 hover:decoration-blue-600 transition-colors"
                     onClick={() => console.log('Navigate to Our mission')}

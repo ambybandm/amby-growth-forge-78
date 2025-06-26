@@ -11,7 +11,7 @@ const Benefits = () => {
       benefits: [
         {
           title: "Avoid the Headache of Managing Many Teams",
-          description: "No need to deal with different agencies or freelancers — we handle everything from marketing to sales."
+          description: "We handle both marketing and sales, so you don't have to juggle different teams"
         },
         {
           title: "Get Your First 1,000 Customers — Fast",
@@ -57,7 +57,7 @@ const Benefits = () => {
         },
         {
           title: "Offload Execution, Focus on What Matters",
-          description: "Hand over the work — you lead the strategy, we handle the rest"
+          description: "Too much on your plate? Hand over the work — you lead the strategy, we handle the rest."
         }
       ]
     }

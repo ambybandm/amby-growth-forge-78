@@ -37,11 +37,11 @@ const CTA = () => {
                 <div className="text-gray-300">+91 8333012936</div>
               </div>
               <div className="text-center">
-                <div className="font-semibold flex items-center justify-center">
-                  Chat us
-                  <MessageCircle className="h-4 w-4 ml-1 text-green-400" />
+                <div className="font-semibold">Chat us</div>
+                <div className="text-gray-300 cursor-pointer hover:text-white flex items-center justify-center">
+                  <MessageCircle className="h-4 w-4 mr-1 text-green-400" />
+                  WhatsApp
                 </div>
-                <div className="text-gray-300 cursor-pointer hover:text-white">WhatsApp</div>
               </div>
               <div className="text-center">
                 <div className="font-semibold">Visit us</div>

@@ -10,14 +10,14 @@ const Services = () => {
       title: "Lead generation",
       description: "We deliver leads that actually converts so that you can focus on closing, not chasing",
       tags: ["#PaidCampaigns", "#MetaAds", "#GoogleAds", "#AdCreatives", "#LandingPage", "#LeadTracking"],
-      backgroundImage: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      backgroundImage: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
     },
     {
       icon: TrendingUp,
       title: "Revenue generation",
       description: "We don't stop at leads, we convert, we deliver revenues. We love accountability",
       tags: ["#LeadGeneration", "#SalesScripts", "#SalesWebinars", "#ConversionOptimization", "#FullFunnelExecution"],
-      backgroundImage: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      backgroundImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
     },
     {
       icon: Share2,
@@ -31,7 +31,7 @@ const Services = () => {
       title: "Winning ad creatives",
       description: "We deliver winning ads to improve your funnel metrics.",
       tags: ["#AdsStrategy", "#HighConversionAds", "#VideoAds", "#PosterAds"],
-      backgroundImage: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      backgroundImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
     }
   ];
 

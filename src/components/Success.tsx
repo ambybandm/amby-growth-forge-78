@@ -49,7 +49,7 @@ const Success = () => {
           <Card className="mb-12 bg-white border border-gray-200 shadow-lg">
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
-                <span className="text-black text-4xl font-bold mr-4">
+                <span className="text-black text-4xl font-bold italic mr-4">
                   #RecentProject
                 </span>
                 <span className="text-black text-4xl font-bold mr-4">-</span>
@@ -104,7 +104,7 @@ const Success = () => {
                     onClick={handleVideoClick}
                   >
                     <img 
-                      src="/lovable-uploads/4f88fc2e-9d3b-4ad6-be40-c4cfeeec3230.png" 
+                      src="/lovable-uploads/fd34aeb5-f0cc-4b72-9eb0-c1e12e0fa2e0.png" 
                       alt="Video thumbnail" 
                       className="absolute inset-0 w-full h-full object-cover"
                     />
