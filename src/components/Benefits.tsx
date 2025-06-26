@@ -65,7 +65,7 @@ const Benefits = () => {
 
   return (
     <section className="py-20 bg-white font-lexend">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
             How you can benefit
@@ -74,31 +74,31 @@ const Benefits = () => {
 
         <div className="max-w-6xl mx-auto">
           <Tabs defaultValue="business-owner" className="w-full">
-            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 gap-2 md:gap-0 mb-12 bg-white">
+            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 gap-2 md:gap-0 mb-8 md:mb-12 bg-white">
               {benefitSections.map((section) => (
                 <TabsTrigger 
                   key={section.id} 
                   value={section.id}
-                  className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-black bg-gray-100 hover:bg-gray-200 py-4 px-6 text-base font-medium transition-all duration-200 w-full"
+                  className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-black bg-gray-100 hover:bg-gray-200 py-3 md:py-4 px-4 md:px-6 text-sm md:text-base font-medium transition-all duration-200 w-full text-center"
                 >
-                  <section.icon className="h-4 w-4 mr-2" />
-                  {section.title}
+                  <section.icon className="h-4 w-4 mr-2 flex-shrink-0" />
+                  <span className="truncate">{section.title}</span>
                 </TabsTrigger>
               ))}
             </TabsList>
 
             {benefitSections.map((section) => (
-              <TabsContent key={section.id} value={section.id}>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <TabsContent key={section.id} value={section.id} className="mt-8 md:mt-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                   {section.benefits.map((benefit, benefitIndex) => (
                     <div key={benefitIndex} className="text-left">
                       <div className="flex items-start">
                         <CheckCircle className="h-6 w-6 mt-1 mr-3 flex-shrink-0 text-black" />
                         <div>
-                          <h4 className="text-xl font-semibold mb-3 text-black">
+                          <h4 className="text-lg md:text-xl font-semibold mb-3 text-black">
                             {benefit.title}
                           </h4>
-                          <p className="leading-relaxed text-gray-600 text-lg">
+                          <p className="leading-relaxed text-gray-600 text-base md:text-lg">
                             {benefit.description}
                           </p>
                         </div>
