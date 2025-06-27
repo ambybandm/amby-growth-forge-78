@@ -114,6 +114,12 @@ const Footer = () => {
               </li>
               <li 
                 className="text-gray-600 hover:text-black cursor-pointer"
+                onClick={scrollToServices}
+              >
+                Our services
+              </li>
+              <li 
+                className="text-gray-600 hover:text-black cursor-pointer"
                 onClick={scrollToCaseStudies}
               >
                 Case studies
@@ -144,16 +150,10 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-black mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-600">
               <li 
-                className="hover:text-black cursor-pointer"
-                onClick={scrollToServices}
+                className="text-gray-600 hover:text-black cursor-pointer"
+                onClick={scrollToCaseStudies}
               >
-                Our services
-              </li>
-              <li 
-                className="hover:text-black cursor-pointer"
-                onClick={scrollToCTA}
-              >
-                Contact us
+                Case studies
               </li>
             </ul>
           </div>

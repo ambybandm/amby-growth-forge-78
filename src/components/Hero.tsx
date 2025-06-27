@@ -1,8 +1,11 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
+
 const Hero = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const scrollToServices = () => {
     const servicesSection = document.querySelector('section:has(h2:contains("Our services"))') || document.querySelector('[id*="services"]') || document.querySelector('section:nth-of-type(2)');
     if (servicesSection) {
@@ -12,6 +15,7 @@ const Hero = () => {
     }
     setIsMobileMenuOpen(false);
   };
+
   const scrollToCTA = () => {
     const ctaSection = document.querySelector('section:has(h2:contains("Ready to accelerate"))') || document.querySelector('[class*="bg-black"]');
     if (ctaSection) {
@@ -21,6 +25,7 @@ const Hero = () => {
     }
     setIsMobileMenuOpen(false);
   };
+
   const scrollToCaseStudies = () => {
     const caseStudiesSection = document.querySelector('section:has(h2:contains("Success with Amby"))') || document.querySelector('[class*="bg-gray-100"]');
     if (caseStudiesSection) {
@@ -30,17 +35,22 @@ const Hero = () => {
     }
     setIsMobileMenuOpen(false);
   };
+
   const handleBookService = () => {
     window.open('https://calendly.com/ambymarcom/30min', '_blank');
   };
+
   const handleFreeAudit = () => {
     window.open('https://calendly.com/ambybandm/schedule-a-call', '_blank');
   };
+
   const handleServiceNavigation = (path: string) => {
     window.location.href = path;
     setIsMobileMenuOpen(false);
   };
-  return <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
+
+  return (
+    <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
       {/* Header */}
       <header className="w-full py-4 md:py-6 px-4 md:px-6 border-b border-black relative">
         <div className="container mx-auto flex items-center justify-between">
@@ -67,7 +77,8 @@ const Hero = () => {
         </div>
 
         {/* Mobile Navigation Menu */}
-        {isMobileMenuOpen && <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-black z-50">
+        {isMobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-black z-50">
             <div className="container mx-auto px-4 py-4">
               <div className="space-y-4">
                 <div>
@@ -97,7 +108,8 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-          </div>}
+          </div>
+        )}
       </header>
 
       {/* Main Hero Content */}
@@ -139,6 +151,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
