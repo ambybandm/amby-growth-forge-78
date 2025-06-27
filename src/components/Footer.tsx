@@ -10,18 +10,38 @@ const Footer = () => {
   };
 
   const scrollToServices = () => {
-    const servicesSection = document.querySelector('section:has(h2:contains("Our services"))') || document.querySelector('[id*="services"]') || document.querySelector('section:nth-of-type(2)');
+    // More reliable selector - look for the Services section
+    const servicesSection = document.querySelector('section:has(h2:contains("Our services"))') || 
+                           document.querySelector('[class*="Services"]') || 
+                           document.querySelector('section:nth-of-type(2)');
     if (servicesSection) {
       servicesSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    } else {
+      // Fallback - scroll to a specific position if section not found
+      window.scrollTo({
+        top: window.innerHeight,
         behavior: 'smooth'
       });
     }
   };
 
   const scrollToCTA = () => {
-    const ctaSection = document.querySelector('section:has(h2:contains("Ready to accelerate"))') || document.querySelector('[class*="bg-black"]');
+    // More reliable selector - look for the CTA section
+    const ctaSection = document.querySelector('section:has(h2:contains("Ready to accelerate"))') || 
+                      document.querySelector('[class*="CTA"]') || 
+                      document.querySelector('section:last-of-type:not(footer)');
     if (ctaSection) {
       ctaSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    } else {
+      // Fallback - scroll to near bottom of page
+      window.scrollTo({
+        top: document.documentElement.scrollHeight - window.innerHeight - 200,
         behavior: 'smooth'
       });
     }
