@@ -10,17 +10,23 @@ const Footer = () => {
   };
 
   const scrollToServices = () => {
-    // More reliable selector - look for the Services section
-    const servicesSection = document.querySelector('section:has(h2:contains("Our services"))') || 
-                           document.querySelector('[class*="Services"]') || 
-                           document.querySelector('section:nth-of-type(2)');
+    // Find the Services section by looking for the heading text
+    const headings = document.querySelectorAll('h2');
+    let servicesSection = null;
+    
+    headings.forEach(heading => {
+      if (heading.textContent?.toLowerCase().includes('our services')) {
+        servicesSection = heading.closest('section');
+      }
+    });
+    
     if (servicesSection) {
       servicesSection.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
     } else {
-      // Fallback - scroll to a specific position if section not found
+      // Fallback - scroll to approximately where services should be
       window.scrollTo({
         top: window.innerHeight,
         behavior: 'smooth'
@@ -29,10 +35,16 @@ const Footer = () => {
   };
 
   const scrollToCTA = () => {
-    // More reliable selector - look for the CTA section
-    const ctaSection = document.querySelector('section:has(h2:contains("Ready to accelerate"))') || 
-                      document.querySelector('[class*="CTA"]') || 
-                      document.querySelector('section:last-of-type:not(footer)');
+    // Find the CTA section by looking for the heading text
+    const headings = document.querySelectorAll('h2');
+    let ctaSection = null;
+    
+    headings.forEach(heading => {
+      if (heading.textContent?.toLowerCase().includes('ready to accelerate')) {
+        ctaSection = heading.closest('section');
+      }
+    });
+    
     if (ctaSection) {
       ctaSection.scrollIntoView({
         behavior: 'smooth',
@@ -48,7 +60,15 @@ const Footer = () => {
   };
 
   const scrollToCaseStudies = () => {
-    const caseStudiesSection = document.querySelector('section:has(h2:contains("Success with Amby"))') || document.querySelector('[class*="bg-gray-100"]');
+    const headings = document.querySelectorAll('h2');
+    let caseStudiesSection = null;
+    
+    headings.forEach(heading => {
+      if (heading.textContent?.toLowerCase().includes('success with amby')) {
+        caseStudiesSection = heading.closest('section');
+      }
+    });
+    
     if (caseStudiesSection) {
       caseStudiesSection.scrollIntoView({
         behavior: 'smooth'
