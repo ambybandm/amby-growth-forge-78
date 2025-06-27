@@ -1,6 +1,7 @@
 
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import CoreValue from "@/components/CoreValue";
 import Benefits from "@/components/Benefits";
 import Success from "@/components/Success";
 import WhyAmby from "@/components/WhyAmby";
@@ -13,6 +14,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Hero />
       <Services />
+      <CoreValue />
       <Benefits />
       <Success />
       <WhyAmby />
