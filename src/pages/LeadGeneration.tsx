@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Target, Users, TrendingUp, CheckCircle } from "lucide-react";
+import { ArrowRight, Target, Users, TrendingUp, CheckCircle, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const LeadGeneration = () => {
@@ -11,14 +11,26 @@ const LeadGeneration = () => {
     "Lead Tracking & Analytics",
     "A/B Testing for Ad Creatives",
     "Conversion Rate Optimization",
-    "Real-time Performance Monitoring"
+    "Video & Poster Ad Production"
   ];
 
   const benefits = [
     { icon: Target, title: "Qualified Leads", description: "We focus on quality over quantity, delivering leads that actually convert" },
     { icon: Users, title: "Targeted Audience", description: "Precise targeting to reach your ideal customers" },
-    { icon: TrendingUp, title: "Scalable Growth", description: "Systems that grow with your business" }
+    { icon: TrendingUp, title: "Improve Funnel Metrics", description: "Scalable solutions to improve funnel metrics" }
   ];
+
+  const handleBookService = () => {
+    window.open('https://calendly.com/ambymarcom/30min', '_blank');
+  };
+
+  const handleFreeAudit = () => {
+    window.open('https://calendly.com/ambybandm/schedule-a-call', '_blank');
+  };
+
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/918333012936', '_blank');
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -45,7 +57,7 @@ const LeadGeneration = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center mx-auto mb-8">
@@ -59,20 +71,10 @@ const LeadGeneration = () => {
             </p>
             <div className="flex flex-wrap gap-3 justify-center mb-12">
               {["#PaidCampaigns", "#MetaAds", "#GoogleAds", "#AdCreatives", "#LandingPage", "#LeadTracking"].map((tag, index) => (
-                <span key={index} className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">
+                <span key={index} className="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium">
                   {tag}
                 </span>
               ))}
-            </div>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold">
-                Get Started
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-blue-600 hover:text-white hover:border-blue-600 px-8 py-4 text-lg font-semibold bg-transparent">
-                Free Consultation
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
             </div>
           </div>
         </div>
@@ -85,7 +87,7 @@ const LeadGeneration = () => {
             <h2 className="text-4xl font-bold text-center text-black mb-16">
               What We Do
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
               {features.map((feature, index) => (
                 <Card key={index} className="bg-white border border-gray-200 hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
@@ -97,6 +99,18 @@ const LeadGeneration = () => {
                 </Card>
               ))}
             </div>
+            
+            {/* CTA Buttons moved here */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-8 py-4 text-lg font-semibold" onClick={handleBookService}>
+                Get Started
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-black hover:text-white hover:border-black px-8 py-4 text-lg font-semibold bg-transparent" onClick={handleFreeAudit}>
+                Free Consultation
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -105,15 +119,28 @@ const LeadGeneration = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-center text-black mb-16">
+            <h2 className="text-4xl font-bold text-center text-black mb-8">
               Why Choose Our Lead Generation?
             </h2>
+            
+            {/* Number Highlights */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-black mb-2">1/4th</div>
+                <div className="text-lg text-gray-600">Cost per lead</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-black mb-2">1200+</div>
+                <div className="text-lg text-gray-600">Ad creatives delivered</div>
+              </div>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {benefits.map((benefit, index) => (
                 <Card key={index} className="text-center bg-white border border-gray-200 hover:shadow-lg transition-shadow">
                   <CardContent className="p-8">
-                    <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-6">
-                      <benefit.icon className="h-8 w-8 text-blue-600" />
+                    <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mx-auto mb-6">
+                      <benefit.icon className="h-8 w-8 text-black" />
                     </div>
                     <h3 className="text-xl font-bold text-black mb-4">{benefit.title}</h3>
                     <p className="text-gray-600">{benefit.description}</p>
@@ -128,16 +155,55 @@ const LeadGeneration = () => {
       {/* CTA Section */}
       <section className="py-20 bg-black text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Generate Quality Leads?
-          </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Let's discuss your lead generation strategy and start driving results
-          </p>
-          <Button size="lg" className="bg-white text-black hover:bg-gray-200 px-8 py-4 text-lg font-semibold">
-            Book a Consultation
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Ready to Generate Quality Leads?
+            </h2>
+            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              Let's discuss your lead generation strategy and start driving results
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center mb-8 md:mb-12">
+              <Button 
+                size="lg" 
+                className="bg-white text-black hover:bg-gray-200 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg w-full sm:w-auto"
+                onClick={handleBookService}
+              >
+                Get Started
+                <ArrowRight className="ml-2 h-4 md:h-5 w-4 md:w-5" />
+              </Button>
+            </div>
+
+            {/* Contact Information */}
+            <div className="text-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 text-white">
+                <div className="text-center">
+                  <div className="font-semibold text-sm md:text-base">Email us</div>
+                  <div className="text-gray-300 text-sm md:text-base break-all">teja@ambymc.com</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-semibold text-sm md:text-base">Call us</div>
+                  <div className="text-gray-300 text-sm md:text-base">+91 8333012936</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-semibold text-sm md:text-base">Chat us</div>
+                  <Button 
+                    variant="ghost" 
+                    size="sm"
+                    className="text-gray-300 hover:text-white hover:bg-gray-800 p-2 rounded-lg transition-all duration-200"
+                    onClick={handleWhatsApp}
+                  >
+                    <MessageCircle className="h-4 w-4 md:h-5 md:w-5 mr-2 text-green-400" />
+                    WhatsApp
+                  </Button>
+                </div>
+                <div className="text-center">
+                  <div className="font-semibold text-sm md:text-base">Visit us</div>
+                  <div className="text-gray-300 text-sm md:text-base">Rajapushpa, Financial district, Hyderabad, 500032</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
