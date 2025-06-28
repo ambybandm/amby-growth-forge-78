@@ -119,12 +119,12 @@ const LeadGeneration = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-center text-black mb-8">
+            <h2 className="text-4xl font-bold text-center text-black mb-12">
               Why Choose Our Lead Generation?
             </h2>
             
             {/* Number Highlights */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-black mb-2">1/4th</div>
                 <div className="text-lg text-gray-600">Cost per lead</div>
@@ -135,7 +135,7 @@ const LeadGeneration = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {benefits.map((benefit, index) => (
                 <Card key={index} className="text-center bg-white border border-gray-200 hover:shadow-lg transition-shadow">
                   <CardContent className="p-8">
@@ -147,6 +147,18 @@ const LeadGeneration = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-8 py-4 text-lg font-semibold" onClick={handleBookService}>
+                Get Started
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-black hover:text-white hover:border-black px-8 py-4 text-lg font-semibold bg-transparent" onClick={handleFreeAudit}>
+                Free Consultation
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
             </div>
           </div>
         </div>
