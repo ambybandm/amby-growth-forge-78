@@ -135,8 +135,8 @@ const Hero = () => {
       </header>
 
       {/* Main Hero Content */}
-      <div className="flex-1 flex items-center justify-center px-4 md:px-6 my-[12px]">
-        <div className="container mx-auto relative z-10 my-[21px]">
+      <div className="flex-1 flex items-center justify-center px-4 my-0 md:px-0">
+        <div className="container mx-auto relative z-10 my-0">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6 md:mb-8">
               <h2 className="font-bold mb-4 md:mb-6 leading-tight text-black text-center py-0 my-0 text-6xl md:text-8xl">
