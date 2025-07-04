@@ -1,24 +1,36 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Share2, Users, Zap, CheckCircle } from "lucide-react";
+import { ArrowRight, Share2, Users, Zap, CheckCircle, MessageCircle, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const SocialMediaGrowth = () => {
   const features = [
-    "Page Management & Strategy",
-    "Personal Branding Development",
-    "Content Calendar Creation",
-    "Reels & Shorts Production",
+    "Social Media Strategy",
+    "Content Calendar",
+    "Page Management",
+    "Posters & Videos Production",
     "AI Content Creation",
-    "Community Management"
+    "Timely Delivery"
   ];
 
   const benefits = [
     { icon: Users, title: "Audience Growth", description: "Build a genuine, engaged community around your brand" },
     { icon: Share2, title: "Viral Content", description: "Create content that resonates and gets shared" },
-    { icon: Zap, title: "Brand Authority", description: "Establish your brand as a thought leader in your industry" }
+    { icon: Shield, title: "Build Trust", description: "Establish credibility and build lasting trust with your audience" }
   ];
+
+  const handleBookService = () => {
+    window.open('https://calendly.com/ambymarcom/30min', '_blank');
+  };
+
+  const handleFreeAudit = () => {
+    window.open('https://calendly.com/ambybandm/schedule-a-call', '_blank');
+  };
+
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/918333012936', '_blank');
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -57,23 +69,6 @@ const SocialMediaGrowth = () => {
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Making brands visible, valuable & viral - consistently
             </p>
-            <div className="flex flex-wrap gap-3 justify-center mb-12">
-              {["#PageManagement", "#PersonalBranding", "#ContentCalendar", "#ReelsAndShorts", "#AIContentCreation"].map((tag, index) => (
-                <span key={index} className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-medium">
-                  {tag}
-                </span>
-              ))}
-            </div>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg font-semibold">
-                Grow Your Presence
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-purple-600 hover:text-white hover:border-purple-600 px-8 py-4 text-lg font-semibold bg-transparent">
-                Social Media Audit
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
           </div>
         </div>
       </section>
@@ -83,9 +78,9 @@ const SocialMediaGrowth = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-black mb-16">
-              Our Social Media Services
+              What We Do
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
               {features.map((feature, index) => (
                 <Card key={index} className="bg-white border border-gray-200 hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
@@ -96,6 +91,18 @@ const SocialMediaGrowth = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+            
+            {/* CTA Buttons moved here */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-8 py-4 text-lg font-semibold" onClick={handleBookService}>
+                Get Started
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-black hover:text-white hover:border-black px-8 py-4 text-lg font-semibold bg-transparent" onClick={handleFreeAudit}>
+                Free Consultation
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
             </div>
           </div>
         </div>
@@ -128,16 +135,64 @@ const SocialMediaGrowth = () => {
       {/* CTA Section */}
       <section className="py-20 bg-black text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Go Viral?
-          </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Let's build your social media presence and make your brand unforgettable
-          </p>
-          <Button size="lg" className="bg-white text-black hover:bg-gray-200 px-8 py-4 text-lg font-semibold">
-            Start Growing Today
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Ready to Build Trust?
+            </h2>
+            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              Let's build your social media presence and make your brand trustworthy
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center mb-8 md:mb-12">
+              <Button 
+                size="lg" 
+                className="bg-white text-black hover:bg-gray-200 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg w-full sm:w-auto"
+                onClick={handleBookService}
+              >
+                Get Started
+                <ArrowRight className="ml-2 h-4 md:h-5 w-4 md:w-5" />
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-2 border-white text-white hover:bg-white hover:text-black px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg w-full sm:w-auto bg-transparent"
+                onClick={handleFreeAudit}
+              >
+                Free Consultation
+                <ArrowRight className="ml-2 h-4 md:h-5 w-4 md:w-5" />
+              </Button>
+            </div>
+
+            {/* Contact Information */}
+            <div className="text-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 text-white">
+                <div className="text-center">
+                  <div className="font-semibold text-sm md:text-base">Email us</div>
+                  <div className="text-gray-300 text-sm md:text-base break-all">teja@ambymc.com</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-semibold text-sm md:text-base">Call us</div>
+                  <div className="text-gray-300 text-sm md:text-base">+91 8333012936</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-semibold text-sm md:text-base">Chat us</div>
+                  <Button 
+                    variant="ghost" 
+                    size="sm"
+                    className="text-gray-300 hover:text-white hover:bg-gray-800 p-2 rounded-lg transition-all duration-200"
+                    onClick={handleWhatsApp}
+                  >
+                    <MessageCircle className="h-4 w-4 md:h-5 md:w-5 mr-2 text-green-400" />
+                    WhatsApp
+                  </Button>
+                </div>
+                <div className="text-center">
+                  <div className="font-semibold text-sm md:text-base">Visit us</div>
+                  <div className="text-gray-300 text-sm md:text-base">Rajapushpa, Financial district, Hyderabad, 500032</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
