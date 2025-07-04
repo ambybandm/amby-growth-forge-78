@@ -1,21 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
-
 const Hero = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   const scrollToServices = () => {
     // Find the Services section by looking for the heading text
     const headings = document.querySelectorAll('h2');
     let servicesSection = null;
-    
     headings.forEach(heading => {
       if (heading.textContent?.toLowerCase().includes('our services')) {
         servicesSection = heading.closest('section');
       }
     });
-    
     if (servicesSection) {
       servicesSection.scrollIntoView({
         behavior: 'smooth',
@@ -30,18 +26,15 @@ const Hero = () => {
     }
     setIsMobileMenuOpen(false);
   };
-
   const scrollToCTA = () => {
     // Find the CTA section by looking for the heading text
     const headings = document.querySelectorAll('h2');
     let ctaSection = null;
-    
     headings.forEach(heading => {
       if (heading.textContent?.toLowerCase().includes('ready to accelerate')) {
         ctaSection = heading.closest('section');
       }
     });
-    
     if (ctaSection) {
       ctaSection.scrollIntoView({
         behavior: 'smooth',
@@ -56,17 +49,14 @@ const Hero = () => {
     }
     setIsMobileMenuOpen(false);
   };
-
   const scrollToCaseStudies = () => {
     const headings = document.querySelectorAll('h2');
     let caseStudiesSection = null;
-    
     headings.forEach(heading => {
       if (heading.textContent?.toLowerCase().includes('success with amby')) {
         caseStudiesSection = heading.closest('section');
       }
     });
-    
     if (caseStudiesSection) {
       caseStudiesSection.scrollIntoView({
         behavior: 'smooth'
@@ -74,22 +64,17 @@ const Hero = () => {
     }
     setIsMobileMenuOpen(false);
   };
-
   const handleBookService = () => {
     window.open('https://calendly.com/ambymarcom/30min', '_blank');
   };
-
   const handleFreeAudit = () => {
     window.open('https://calendly.com/ambybandm/schedule-a-call', '_blank');
   };
-
   const handleServiceNavigation = (path: string) => {
     window.location.href = path;
     setIsMobileMenuOpen(false);
   };
-
-  return (
-    <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
+  return <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
       {/* Header */}
       <header className="w-full py-4 md:py-6 px-4 md:px-6 border-b border-black relative">
         <div className="container mx-auto flex items-center justify-between">
@@ -116,8 +101,7 @@ const Hero = () => {
         </div>
 
         {/* Mobile Navigation Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-black z-50">
+        {isMobileMenuOpen && <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-black z-50">
             <div className="container mx-auto px-4 py-4">
               <div className="space-y-4">
                 <div>
@@ -147,8 +131,7 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-          </div>
-        )}
+          </div>}
       </header>
 
       {/* Main Hero Content */}
@@ -156,7 +139,7 @@ const Hero = () => {
         <div className="container mx-auto relative z-10 my-[21px]">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6 md:mb-8">
-              <h2 className="md:text-6xl font-bold mb-4 md:mb-6 leading-tight text-black text-center py-0 my-0 text-6xl">
+              <h2 className="font-bold mb-4 md:mb-6 leading-tight text-black text-center py-0 my-0 text-6xl md:text-8xl">
                 The missing team behind your growth.
               </h2>
               <p className="text-base md:text-xl lg:text-2xl text-black mb-6 md:mb-8 max-w-2xl mx-auto px-px my-[10px]">Leads. Sales. Content creation.</p>
@@ -190,8 +173,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
