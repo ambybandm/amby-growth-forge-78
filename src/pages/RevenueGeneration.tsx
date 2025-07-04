@@ -10,10 +10,10 @@ const RevenueGeneration = () => {
   
   const features = [
     "Full Funnel Execution",
-    "Sales Script Development",
-    "Conversion Optimization",
-    "Revenue Tracking & Analytics",
-    "Sales Webinar Creation",
+    "Lead Generation",
+    "Sales Webinars",
+    "Sales Calls",
+    "Conversion Optimisation",
     "Performance Accountability"
   ];
 
@@ -100,8 +100,8 @@ const RevenueGeneration = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="w-20 h-20 rounded-full bg-black flex items-center justify-center mx-auto mb-8">
-              <TrendingUp className="h-10 w-10 text-green-600" />
+            <div className="w-20 h-20 rounded-full bg-green-600 flex items-center justify-center mx-auto mb-8">
+              <TrendingUp className="h-10 w-10 text-white" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-black mb-6">
               Revenue Generation
@@ -109,13 +109,6 @@ const RevenueGeneration = () => {
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
               We don't stop at leads, we convert, we deliver revenues. We love accountability
             </p>
-            <div className="flex flex-wrap gap-3 justify-center mb-12">
-              {["#LeadGeneration", "#SalesScripts", "#SalesWebinars", "#ConversionOptimization", "#FullFunnelExecution"].map((tag, index) => (
-                <span key={index} className="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-medium">
-                  {tag}
-                </span>
-              ))}
-            </div>
           </div>
         </div>
       </section>
@@ -245,7 +238,7 @@ const RevenueGeneration = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-black mb-16">
-              What We Do
+              Why Our Revenue Generation Works
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               {benefits.map((benefit, index) => (
@@ -261,38 +254,6 @@ const RevenueGeneration = () => {
               ))}
             </div>
 
-            {/* Case Studies Slider */}
-            <Card className="bg-white border border-gray-200 shadow-lg">
-              <CardContent className="p-4 md:p-8">
-                <h4 className="text-xl md:text-2xl font-bold text-black mb-6 md:mb-8 text-center">Case studies</h4>
-                <Carousel className="w-full max-w-5xl mx-auto">
-                  <CarouselContent>
-                    {caseStudies.map((study, index) => (
-                      <CarouselItem key={index} className="md:basis-1/2">
-                        <div 
-                          className="flex items-center justify-center p-4 md:p-8 bg-white border border-gray-200 relative overflow-hidden min-h-[200px] md:min-h-[250px] rounded-lg cursor-pointer hover:shadow-lg transition-all duration-300"
-                          style={{
-                            backgroundImage: `url(${study.bgImage})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat'
-                          }}
-                          onClick={() => handleCaseStudyClick(study.title)}
-                        >
-                          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-                          <div className="relative z-10 flex items-center text-center px-2">
-                            <TrendingUp className="h-6 w-6 md:h-8 md:w-8 text-white mr-3 md:mr-4 flex-shrink-0" />
-                            <span className="text-white font-semibold text-base md:text-xl">{study.title}</span>
-                          </div>
-                        </div>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                  <CarouselPrevious className="hidden md:flex" />
-                  <CarouselNext className="hidden md:flex" />
-                </Carousel>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
