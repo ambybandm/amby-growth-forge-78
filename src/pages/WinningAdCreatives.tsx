@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ArrowRight, Zap, Eye, BarChart3, CheckCircle, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -93,19 +94,25 @@ const WinningAdCreatives = () => {
             <h2 className="text-4xl font-bold text-center text-black mb-16">
               Our Creative Portfolio
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {mediaLinks.map((link, index) => (
-                <div key={index} className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
-                  <iframe
-                    src={link}
-                    className="w-full h-full"
-                    frameBorder="0"
-                    allowFullScreen
-                    title={`Creative ${index + 1}`}
-                  />
-                </div>
-              ))}
-            </div>
+            <Carousel className="w-full">
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {mediaLinks.map((link, index) => (
+                  <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                    <div className="w-full h-64 md:h-72 lg:h-80 bg-gray-100 rounded-lg overflow-hidden">
+                      <iframe
+                        src={link}
+                        className="w-full h-full"
+                        frameBorder="0"
+                        allowFullScreen
+                        title={`Creative ${index + 1}`}
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </section>
