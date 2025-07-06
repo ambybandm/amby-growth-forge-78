@@ -8,6 +8,7 @@ import WhyAmby from "@/components/WhyAmby";
 import FounderQuote from "@/components/FounderQuote";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import WhatsAppChat from "@/components/WhatsAppChat";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <FounderQuote />
       <CTA />
       <Footer />
+      <WhatsAppChat />
     </div>
   );
 };

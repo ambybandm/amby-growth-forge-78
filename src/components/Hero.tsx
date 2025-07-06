@@ -84,11 +84,11 @@ const Hero = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Button variant="outline" size="sm" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:border-primary font-semibold bg-transparent" onClick={scrollToServices}>
+            <Button variant="outline" size="sm" className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background hover:border-foreground font-semibold bg-transparent" onClick={scrollToServices}>
               Our services
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button variant="outline" size="sm" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:border-primary font-semibold bg-transparent" onClick={scrollToCTA}>
+            <Button variant="outline" size="sm" className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background hover:border-foreground font-semibold bg-transparent" onClick={scrollToCTA}>
               Contact us
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -140,17 +140,17 @@ const Hero = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6 md:mb-8">
               <h2 className="font-bold mb-4 md:mb-6 leading-tight text-foreground text-center py-0 my-0 text-6xl md:text-8xl">
-                The missing team behind your growth.
+                The missing team<br />behind your growth.
               </h2>
               <p className="text-base md:text-xl lg:text-2xl text-foreground mb-6 md:mb-8 max-w-2xl mx-auto px-px my-[10px]">Leads. Sales. Content creation.</p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-8 md:mb-12 px-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/80 text-primary-foreground px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold w-full sm:w-auto" onClick={handleBookService}>
+              <Button size="lg" className="bg-foreground hover:bg-foreground/80 text-background px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold w-full sm:w-auto" onClick={handleBookService}>
                 Book our service
                 <ArrowRight className="ml-2 h-4 md:h-5 w-4 md:w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:border-primary px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold bg-transparent w-full sm:w-auto" onClick={handleFreeAudit}>
+              <Button variant="outline" size="lg" className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background hover:border-foreground px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold bg-transparent w-full sm:w-auto" onClick={handleFreeAudit}>
                 Free growth audit
                 <ArrowRight className="ml-2 h-4 md:h-5 w-4 md:w-5" />
               </Button>

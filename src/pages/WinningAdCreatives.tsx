@@ -1,9 +1,9 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ArrowRight, Zap, Eye, BarChart3, CheckCircle, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import WhatsAppChat from "@/components/WhatsAppChat";
 
 const WinningAdCreatives = () => {
   const features = [
@@ -94,25 +94,21 @@ const WinningAdCreatives = () => {
             <h2 className="text-4xl font-bold text-center text-black mb-16">
               Our Creative Portfolio
             </h2>
-            <Carousel className="w-full">
-              <CarouselContent className="-ml-2 md:-ml-4">
-                {mediaLinks.map((link, index) => (
-                  <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
-                    <div className="w-full h-64 md:h-72 lg:h-80 bg-gray-100 rounded-lg overflow-hidden">
-                      <iframe
-                        src={link}
-                        className="w-full h-full"
-                        frameBorder="0"
-                        allowFullScreen
-                        title={`Creative ${index + 1}`}
-                      />
-                    </div>
-                  </CarouselItem>
+            <div className="overflow-hidden">
+              <div className="flex animate-scroll gap-6">
+                {[...mediaLinks, ...mediaLinks].map((link, index) => (
+                  <div key={index} className="flex-none w-80 h-64 bg-gray-100 rounded-lg overflow-hidden">
+                    <iframe
+                      src={link}
+                      className="w-full h-full"
+                      frameBorder="0"
+                      allowFullScreen
+                      title={`Creative ${index + 1}`}
+                    />
+                  </div>
                 ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -239,6 +235,7 @@ const WinningAdCreatives = () => {
           </div>
         </div>
       </section>
+      <WhatsAppChat />
     </div>
   );
 };
