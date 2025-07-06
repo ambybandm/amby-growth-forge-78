@@ -78,7 +78,7 @@ const Benefits = () => {
                 <TabsTrigger 
                   key={section.id} 
                   value={section.id}
-                  className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-black bg-gray-100 hover:bg-gray-200 py-3 md:py-4 px-4 md:px-6 text-sm md:text-base font-medium transition-all duration-200 w-full text-center"
+                  className="data-[state=active]:bg-black data-[state=active]:text-white text-black bg-white hover:bg-gray-100 py-3 md:py-4 px-4 md:px-6 text-sm md:text-base font-medium transition-all duration-200 w-full text-center border border-black"
                 >
                   <section.icon className="h-4 w-4 mr-2 flex-shrink-0" />
                   <span className="truncate">{section.title}</span>

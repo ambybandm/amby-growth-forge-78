@@ -19,7 +19,7 @@ const FounderQuote = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-50 text-black font-lexend">
+    <section className="py-20 bg-white text-black font-lexend">
       <div className="container mx-auto px-4 md:px-6">
         {/* Founder Quote Section */}
         <div className="text-center mb-16">
@@ -74,7 +74,7 @@ const FounderQuote = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-3xl p-8 md:p-12 text-center shadow-xl border border-gray-200 relative overflow-hidden">
             <div className="relative z-10">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white border-2 border-black rounded-full mb-6">
                 <Target className="h-8 w-8 text-black" />
               </div>
               
@@ -98,17 +98,17 @@ const FounderQuote = () => {
               
               {/* Benefits */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
-                <div className="flex flex-col items-center p-4 bg-gray-50 rounded-xl">
+                <div className="flex flex-col items-center p-4 bg-white border border-black rounded-xl">
                   <div className="w-3 h-3 bg-black rounded-full mb-2"></div>
-                  <span className="text-sm md:text-base font-semibold text-gray-700">30 min discussion</span>
+                  <span className="text-sm md:text-base font-semibold text-black">30 min discussion</span>
                 </div>
-                <div className="flex flex-col items-center p-4 bg-gray-50 rounded-xl">
+                <div className="flex flex-col items-center p-4 bg-white border border-black rounded-xl">
                   <div className="w-3 h-3 bg-black rounded-full mb-2"></div>
-                  <span className="text-sm md:text-base font-semibold text-gray-700">30k worth</span>
+                  <span className="text-sm md:text-base font-semibold text-black">30k worth</span>
                 </div>
-                <div className="flex flex-col items-center p-4 bg-gray-50 rounded-xl">
+                <div className="flex flex-col items-center p-4 bg-white border border-black rounded-xl">
                   <div className="w-3 h-3 bg-black rounded-full mb-2"></div>
-                  <span className="text-sm md:text-base font-semibold text-gray-700">Only 10 slots/month</span>
+                  <span className="text-sm md:text-base font-semibold text-black">Only 10 slots/month</span>
                 </div>
               </div>
             </div>

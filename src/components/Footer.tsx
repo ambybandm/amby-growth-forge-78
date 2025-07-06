@@ -92,19 +92,19 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold text-black mb-4">Follow us</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200">
+                <a href="#" className="text-gray-600 hover:text-black transition-colors duration-200">
                   <FaFacebook size={24} />
                 </a>
-                <a href="#" className="text-gray-600 hover:text-blue-400 transition-colors duration-200">
+                <a href="#" className="text-gray-600 hover:text-black transition-colors duration-200">
                   <FaTwitter size={24} />
                 </a>
-                <a href="#" className="text-gray-600 hover:text-pink-500 transition-colors duration-200">
+                <a href="#" className="text-gray-600 hover:text-black transition-colors duration-200">
                   <FaInstagram size={24} />
                 </a>
-                <a href="#" className="text-gray-600 hover:text-blue-700 transition-colors duration-200">
+                <a href="#" className="text-gray-600 hover:text-black transition-colors duration-200">
                   <FaLinkedin size={24} />
                 </a>
-                <a href="#" className="text-gray-600 hover:text-red-600 transition-colors duration-200">
+                <a href="#" className="text-gray-600 hover:text-black transition-colors duration-200">
                   <FaYoutube size={24} />
                 </a>
               </div>
