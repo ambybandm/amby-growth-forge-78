@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Target, TrendingUp, Share2, Zap, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import winningAdCreativesBg from "@/assets/winning-ad-creatives-bg.jpg";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -37,7 +38,7 @@ const Services = () => {
       title: "Winning ad creatives",
       description: "We deliver winning ads to improve your funnel metrics.",
       tags: ["#AdsStrategy", "#HighConversionAds", "#VideoAds", "#PosterAds"],
-      backgroundImage: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      backgroundImage: winningAdCreativesBg,
       route: "/winning-ad-creatives"
     }
   ];
@@ -47,7 +48,7 @@ const Services = () => {
   };
 
   return (
-    <section className="py-12 md:py-20 bg-white">
+    <section className="py-12 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">

@@ -21,7 +21,7 @@ const SocialMediaGrowth = () => {
   ];
 
   const handleBookService = () => {
-    window.open('https://calendly.com/ambymarcom/30min', '_blank');
+    window.open('https://calendly.com/ambymarketing/30min', '_blank');
   };
 
   const handleFreeAudit = () => {

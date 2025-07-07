@@ -164,7 +164,7 @@ const OurCoreValues = () => {
               <Button 
                 size="lg" 
                 className="bg-white text-black hover:bg-gray-200"
-                onClick={() => window.open('https://calendly.com/ambymarcom/30min', '_blank')}
+                onClick={() => window.open('https://calendly.com/ambymarketing/30min', '_blank')}
               >
                 Start a Conversation
               </Button>
