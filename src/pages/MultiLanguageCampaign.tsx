@@ -37,7 +37,7 @@ const MultiLanguageCampaign = () => {
               Successful Campaign Across Multiple Languages
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              How we helped a global brand reach diverse audiences with culturally relevant messaging
+              How we helped NxtWave (Top ed-tech firm) scale their digital marketing across multiple regional languages
             </p>
             <div className="flex items-center justify-center space-x-8 text-gray-600">
               <div className="flex items-center">
@@ -58,69 +58,99 @@ const MultiLanguageCampaign = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             
-            {/* Challenge Section */}
+            {/* Project Overview */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">The Challenge</h2>
+              <h2 className="text-3xl font-bold text-black mb-6">Project Overview</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our client, a leading SaaS company, wanted to expand their market reach across 
-                multiple countries with different languages and cultural contexts. They needed 
-                to create marketing campaigns that would resonate with local audiences while 
-                maintaining brand consistency.
+                Digital marketing is a key lead generation channel at NxtWave (Top ed-tech firm). 
+                Previous ad types and messaging were not yielding desired results. The ask was to 
+                lower CPL by acquiring qualified leads across multiple regional languages.
               </p>
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-500">
-                <h3 className="font-semibold text-black mb-2">Key Challenges:</h3>
+              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
+                <h3 className="font-semibold text-black mb-2">The Challenge:</h3>
                 <ul className="text-gray-700 space-y-2">
-                  <li>• Cultural sensitivity across 6 different markets</li>
-                  <li>• Language localization beyond simple translation</li>
-                  <li>• Maintaining brand voice and messaging consistency</li>
-                  <li>• Optimizing for local search behaviors and platforms</li>
+                  <li>• Previous ad campaigns were not delivering desired results</li>
+                  <li>• High cost per lead (CPL) across different regional markets</li>
+                  <li>• Need to create culturally relevant content in multiple languages</li>
+                  <li>• Requirement to acquire qualified leads efficiently</li>
                 </ul>
               </div>
             </div>
 
-            {/* Strategy Section */}
+            {/* Approach Section */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">Our Strategy</h2>
+              <h2 className="text-3xl font-bold text-black mb-6">Our Approach</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div className="text-center">
-                  <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <Users className="h-8 w-8 text-blue-600" />
+                  <div className="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <Users className="h-8 w-8 text-black" />
                   </div>
-                  <h3 className="font-semibold text-black mb-2">Market Research</h3>
-                  <p className="text-gray-600">Deep dive into local market preferences and behaviors</p>
+                  <h3 className="font-semibold text-black mb-2">Deep Understanding</h3>
+                  <p className="text-gray-600">Understood the deepest desires that the product satisfies</p>
                 </div>
                 <div className="text-center">
-                  <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <Target className="h-8 w-8 text-green-600" />
+                  <div className="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <Target className="h-8 w-8 text-black" />
                   </div>
-                  <h3 className="font-semibold text-black mb-2">Localization</h3>
-                  <p className="text-gray-600">Cultural adaptation of messaging and creative assets</p>
+                  <h3 className="font-semibold text-black mb-2">Product Awareness</h3>
+                  <p className="text-gray-600">Assessed the prospects' product awareness levels</p>
                 </div>
                 <div className="text-center">
-                  <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <TrendingUp className="h-8 w-8 text-purple-600" />
+                  <div className="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <TrendingUp className="h-8 w-8 text-black" />
                   </div>
-                  <h3 className="font-semibold text-black mb-2">Optimization</h3>
-                  <p className="text-gray-600">Continuous testing and refinement per market</p>
+                  <h3 className="font-semibold text-black mb-2">Competitive Analysis</h3>
+                  <p className="text-gray-600">Analyzed product competitors thoroughly</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Execution Section */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-black mb-6">Execution</h2>
+              <div className="space-y-8">
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="font-semibold text-black mb-4">User Interaction</h3>
+                  <p className="text-gray-700">Spoke with over 100 NxtWave's prospects and competitors' customers to understand their pain points and motivations.</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="font-semibold text-black mb-4">Market Research</h3>
+                  <p className="text-gray-700">Analyzed multiple competitors' offerings and user behavior patterns across different regional markets.</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="font-semibold text-black mb-4">Creatives Development</h3>
+                  <ul className="text-gray-700 space-y-2">
+                    <li>• Produced 3 video ads in 3 days</li>
+                    <li>• Handled scripting, video direction, in-house casting and production</li>
+                    <li>• Shot on iPhone to capture an authentic, non-traditional ad feel</li>
+                  </ul>
+                </div>
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="font-semibold text-black mb-4">Digital Marketing Campaign</h3>
+                  <ul className="text-gray-700 space-y-2">
+                    <li>• Collaborated with performance marketer to run and monitor the campaign daily</li>
+                    <li>• Crafted ad copies and precisely targeted audiences</li>
+                    <li>• Optimized campaigns across multiple regional languages</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
             {/* Results Section */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">The Results</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                <div className="bg-blue-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-blue-600 mb-2">340%</div>
-                  <p className="text-gray-700">Increase in international leads</p>
-                </div>
-                <div className="bg-green-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-green-600 mb-2">85%</div>
-                  <p className="text-gray-700">Higher engagement rates</p>
-                </div>
-                <div className="bg-purple-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-purple-600 mb-2">6</div>
-                  <p className="text-gray-700">New markets successfully entered</p>
+              <h2 className="text-3xl font-bold text-black mb-6">Results</h2>
+              <div className="bg-black text-white p-8 rounded-lg text-center mb-8">
+                <h3 className="text-2xl font-bold mb-4">Campaign got replicated and achieved results across multiple languages by producing leads at optimal costs</h3>
+              </div>
+              <div className="bg-gray-50 p-8 rounded-lg">
+                <h3 className="text-xl font-semibold text-black mb-4">Languages Covered:</h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-700">
+                  <span className="bg-white p-3 rounded text-center">Telugu</span>
+                  <span className="bg-white p-3 rounded text-center">Hindi</span>
+                  <span className="bg-white p-3 rounded text-center">Tamil</span>
+                  <span className="bg-white p-3 rounded text-center">Kannada</span>
+                  <span className="bg-white p-3 rounded text-center">Marathi</span>
+                  <span className="bg-white p-3 rounded text-center">Malayalam</span>
                 </div>
               </div>
             </div>
@@ -131,16 +161,20 @@ const MultiLanguageCampaign = () => {
               <div className="bg-gray-50 p-8 rounded-lg">
                 <ul className="space-y-4 text-gray-700">
                   <li className="flex items-start">
-                    <div className="bg-blue-500 rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
-                    <span>Cultural adaptation goes beyond translation - understanding local contexts is crucial</span>
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Deep user research is essential - speaking with 100+ prospects provided invaluable insights</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="bg-blue-500 rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
-                    <span>Local market research drives better campaign performance than generic approaches</span>
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Authentic, non-traditional ad approaches can be more effective than polished productions</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="bg-blue-500 rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
-                    <span>Consistent brand messaging can coexist with localized execution</span>
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Scalable creative frameworks allow successful replication across multiple languages</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span>Understanding product awareness levels helps in crafting targeted messaging</span>
                   </li>
                 </ul>
               </div>

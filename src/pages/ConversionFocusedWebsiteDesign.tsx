@@ -34,10 +34,10 @@ const ConversionFocusedWebsiteDesign = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
-              Conversion-Focused Website Design
+              Website End-to-End Content Strategy
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              Complete website redesign and content strategy that drove 340% more conversions
+              How we transformed NxtWave Intensive's website using our 7D Framework for maximum conversions
             </p>
             <div className="flex items-center justify-center space-x-8 text-gray-600">
               <div className="flex items-center">
@@ -58,163 +58,124 @@ const ConversionFocusedWebsiteDesign = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             
-            {/* Challenge Section */}
+            {/* Project Overview */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">The Challenge</h2>
+              <h2 className="text-3xl font-bold text-black mb-6">The Project</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                A B2B software company came to us with a beautiful website that wasn't converting. 
-                Despite significant traffic and positive feedback on design, their conversion rate 
-                was stuck at 1.2%. The website looked great but failed to guide visitors toward 
-                taking action. They needed an end-to-end redesign focused on conversion optimization.
+                NxtWave Intensive needed a complete website overhaul to improve their conversion rates 
+                and better communicate their value proposition. The existing website was product-centric 
+                rather than customer-centric, with cluttered information and unclear calls-to-action.
               </p>
-              <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
-                <h3 className="font-semibold text-black mb-2">Key Problems Identified:</h3>
-                <ul className="text-gray-700 space-y-2">
-                  <li>• Beautiful design but poor conversion rate (1.2%)</li>
-                  <li>• Unclear value proposition and messaging hierarchy</li>
-                  <li>• No clear user journey or conversion funnel</li>
-                  <li>• Poor mobile experience and slow loading times</li>
-                  <li>• Weak calls-to-action and trust signals</li>
-                </ul>
+              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
+                <h3 className="font-semibold text-black mb-2">Website Comparison:</h3>
+                <div className="space-y-2 text-gray-700">
+                  <p><strong>Old website:</strong> <a href="https://www.ccbp.in/intensive" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://www.ccbp.in/intensive</a></p>
+                  <p><strong>New webpage:</strong> Complete redesign with improved user experience</p>
+                </div>
               </div>
             </div>
 
-            {/* Strategy Section */}
+            {/* 7D Framework */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">Our Design & Content Strategy</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                <div className="text-center">
-                  <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <Monitor className="h-8 w-8 text-blue-600" />
-                  </div>
-                  <h3 className="font-semibold text-black mb-2">UX/UI Redesign</h3>
-                  <p className="text-gray-600">Conversion-focused layout and user experience</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <Smartphone className="h-8 w-8 text-green-600" />
-                  </div>
-                  <h3 className="font-semibold text-black mb-2">Mobile Optimization</h3>
-                  <p className="text-gray-600">Mobile-first approach with responsive design</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <Zap className="h-8 w-8 text-purple-600" />
-                  </div>
-                  <h3 className="font-semibold text-black mb-2">Performance</h3>
-                  <p className="text-gray-600">Speed optimization and technical improvements</p>
-                </div>
+              <h2 className="text-3xl font-bold text-black mb-6">7D Framework for a Powerful Website</h2>
+              <div className="bg-black text-white p-8 rounded-lg mb-8">
+                <h3 className="text-xl font-semibold mb-4 text-center">Our Proven Website Optimization Framework</h3>
+                <p className="text-gray-300 text-center">
+                  We applied our comprehensive 7D Framework to transform the NxtWave Intensive website 
+                  from a product-centric to a customer-centric experience.
+                </p>
               </div>
-              <div className="mt-8">
-                <h3 className="text-xl font-semibold text-black mb-4">Comprehensive Approach:</h3>
-                <div className="bg-gray-50 p-6 rounded-lg">
+            </div>
+
+            {/* Improvements Made */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-black mb-6">Improvements Made</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="font-semibold text-black mb-4">✅ New Website Features</h3>
                   <ul className="text-gray-700 space-y-3">
-                    <li>• <strong>Content Strategy:</strong> Complete rewrite of all website copy</li>
-                    <li>• <strong>Visual Hierarchy:</strong> Clear information architecture and flow</li>
-                    <li>• <strong>Trust Building:</strong> Added testimonials, case studies, and social proof</li>
-                    <li>• <strong>CTA Optimization:</strong> Strategic placement of conversion elements</li>
-                    <li>• <strong>Technical SEO:</strong> Improved site speed and search visibility</li>
+                    <li>• Clear main CTA (Enroll Now) supported by a transitional CTA (Book a Free Demo)</li>
+                    <li>• Clear steps to becoming a software engineer are outlined</li>
+                    <li>• Customer-centric approach, not product-centric like before</li>
+                    <li>• Clutter-free and easy-to-digest information</li>
+                    <li>• Clear product USPs prominently displayed</li>
                   </ul>
                 </div>
-              </div>
-            </div>
-
-            {/* Process Section */}
-            <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">Our Process</h2>
-              <div className="space-y-6">
-                <div className="flex items-start bg-white p-6 rounded-lg border border-gray-200">
-                  <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 font-bold">1</div>
-                  <div>
-                    <h3 className="font-semibold text-black mb-2">Discovery & Analysis</h3>
-                    <p className="text-gray-700">Comprehensive audit of existing site, user behavior analysis, and competitor research</p>
-                  </div>
-                </div>
-                <div className="flex items-start bg-white p-6 rounded-lg border border-gray-200">
-                  <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 font-bold">2</div>
-                  <div>
-                    <h3 className="font-semibold text-black mb-2">Strategy Development</h3>
-                    <p className="text-gray-700">Created user personas, conversion funnel mapping, and content strategy</p>
-                  </div>
-                </div>
-                <div className="flex items-start bg-white p-6 rounded-lg border border-gray-200">
-                  <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 font-bold">3</div>
-                  <div>
-                    <h3 className="font-semibold text-black mb-2">Design & Development</h3>
-                    <p className="text-gray-700">Wireframing, design mockups, and responsive development with performance optimization</p>
-                  </div>
-                </div>
-                <div className="flex items-start bg-white p-6 rounded-lg border border-gray-200">
-                  <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 font-bold">4</div>
-                  <div>
-                    <h3 className="font-semibold text-black mb-2">Testing & Optimization</h3>
-                    <p className="text-gray-700">A/B testing of key elements, performance monitoring, and continuous optimization</p>
-                  </div>
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="font-semibold text-black mb-4">🎯 Key Focus Areas</h3>
+                  <ul className="text-gray-700 space-y-3">
+                    <li>• Simplified user journey and navigation</li>
+                    <li>• Stronger value proposition messaging</li>
+                    <li>• Enhanced social proof and credibility signals</li>
+                    <li>• Mobile-optimized responsive design</li>
+                    <li>• Faster loading times and better performance</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
             {/* Results Section */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">The Results</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                <div className="bg-blue-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-blue-600 mb-2">5.4%</div>
-                  <p className="text-gray-700">New conversion rate</p>
-                </div>
-                <div className="bg-green-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-green-600 mb-2">350%</div>
-                  <p className="text-gray-700">Increase in conversions</p>
-                </div>
-                <div className="bg-purple-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-purple-600 mb-2">78%</div>
-                  <p className="text-gray-700">Faster page load speed</p>
-                </div>
-                <div className="bg-orange-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-orange-600 mb-2">92%</div>
-                  <p className="text-gray-700">Mobile performance score</p>
-                </div>
-                <div className="bg-teal-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-teal-600 mb-2">45%</div>
-                  <p className="text-gray-700">Reduction in bounce rate</p>
-                </div>
-                <div className="bg-pink-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-pink-600 mb-2">168%</div>
-                  <p className="text-gray-700">Increase in page views</p>
-                </div>
+              <h2 className="text-3xl font-bold text-black mb-6">Results Achieved</h2>
+              <div className="bg-black text-white p-8 rounded-lg text-center mb-8">
+                <h3 className="text-2xl font-bold mb-4">Website Transformation Success</h3>
+                <p className="text-gray-300">
+                  The redesigned website significantly improved user experience and conversion rates, 
+                  leading to better business outcomes for NxtWave Intensive.
+                </p>
               </div>
-              <div className="bg-green-100 p-8 rounded-lg">
-                <h3 className="text-xl font-semibold text-black mb-4">Business Impact:</h3>
-                <ul className="text-gray-700 space-y-2">
-                  <li>• Monthly qualified leads increased by 420%</li>
-                  <li>• Sales qualified leads up by 380%</li>
-                  <li>• Cost per acquisition reduced by 65%</li>
-                  <li>• Average deal size increased by 23%</li>
-                  <li>• Customer acquisition cycle shortened by 31%</li>
-                </ul>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="font-semibold text-black mb-4">Key Metrics Improved</h3>
+                  <ul className="text-gray-700 space-y-2">
+                    <li>• Conversion rate optimization</li>
+                    <li>• User engagement and time on site</li>
+                    <li>• Clear user journey and navigation</li>
+                    <li>• Mobile responsiveness and performance</li>
+                    <li>• Overall user experience enhancement</li>
+                  </ul>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="font-semibold text-black mb-4">Website Links</h3>
+                  <div className="space-y-3">
+                    <div>
+                      <span className="text-sm text-gray-600">Old website:</span>
+                      <a href="https://www.ccbp.in/intensive" target="_blank" rel="noopener noreferrer" 
+                         className="block text-blue-600 hover:underline break-all">
+                        https://www.ccbp.in/intensive
+                      </a>
+                    </div>
+                    <div>
+                      <span className="text-sm text-gray-600">New webpage design:</span>
+                      <p className="text-gray-700">Complete redesign with improved UX/UI</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Key Elements */}
+            {/* Key Learnings */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">Key Design Elements That Worked</h2>
+              <h2 className="text-3xl font-bold text-black mb-6">Key Learnings</h2>
               <div className="bg-gray-50 p-8 rounded-lg">
                 <ul className="space-y-4 text-gray-700">
                   <li className="flex items-start">
-                    <div className="bg-indigo-500 rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
-                    <span><strong>Above-the-fold clarity:</strong> Clear value proposition and primary CTA visible immediately</span>
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span><strong>Customer-centric approach:</strong> Focusing on customer needs rather than product features drives better results</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="bg-indigo-500 rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
-                    <span><strong>Social proof placement:</strong> Strategic use of testimonials and logos at key decision points</span>
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span><strong>Clear communication:</strong> Simplified messaging and clutter-free design improves user experience</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="bg-indigo-500 rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
-                    <span><strong>Progressive disclosure:</strong> Information revealed in digestible chunks to maintain engagement</span>
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span><strong>Strategic CTAs:</strong> Having both primary and transitional calls-to-action caters to different user readiness levels</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="bg-indigo-500 rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
-                    <span><strong>Friction reduction:</strong> Simplified forms and streamlined conversion process</span>
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span><strong>User journey mapping:</strong> Clear steps and pathways help users understand the process and take action</span>
                   </li>
                 </ul>
               </div>

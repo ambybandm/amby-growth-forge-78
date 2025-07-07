@@ -37,7 +37,7 @@ const HighConvertingCopywriting = () => {
               High Converting Copywriting
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              How strategic copywriting transformed a struggling landing page into a conversion powerhouse
+              A showcase of our copywriting work across various campaigns and projects
             </p>
             <div className="flex items-center justify-center space-x-8 text-gray-600">
               <div className="flex items-center">
@@ -58,145 +58,112 @@ const HighConvertingCopywriting = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             
-            {/* Challenge Section */}
+            {/* Copywriting Showcase */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">The Challenge</h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                A fintech startup approached us with a critical problem: their landing page was getting 
-                decent traffic but converting at a dismal 0.8%. Despite having a great product and 
-                competitive pricing, their messaging wasn't resonating with their target audience. 
-                They needed copywriting that would speak directly to their customers' pain points and drive action.
+              <h2 className="text-3xl font-bold text-black mb-6">Our Copywriting Work</h2>
+              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                Below are examples of copywriting work we've created across various campaigns, platforms, and industries. 
+                Each piece is crafted to drive engagement, conversions, and results for our clients.
               </p>
-              <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
-                <h3 className="font-semibold text-black mb-2">Initial Issues:</h3>
-                <ul className="text-gray-700 space-y-2">
-                  <li>• Conversion rate stuck at 0.8%</li>
-                  <li>• Generic messaging that didn't address specific pain points</li>
-                  <li>• Weak value proposition and unclear benefits</li>
-                  <li>• Multiple conflicting calls-to-action</li>
-                  <li>• No emotional connection with the audience</li>
-                </ul>
+              
+              {/* Copywriting Samples Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                  <h3 className="font-semibold text-black mb-3">Ad Copy Sample 1</h3>
+                  <div className="bg-gray-50 p-4 rounded text-sm text-gray-700 mb-4">
+                    "Tired of losing potential customers while they wait for your slow website to load? 
+                    Our 3-second optimization guarantees 40% more conversions. See results in 7 days or get your money back."
+                  </div>
+                  <span className="text-xs text-gray-500">E-commerce optimization campaign</span>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                  <h3 className="font-semibold text-black mb-3">Email Subject Line</h3>
+                  <div className="bg-gray-50 p-4 rounded text-sm text-gray-700 mb-4">
+                    "Sarah, your competitors just gained 3,847 new customers this month"
+                  </div>
+                  <span className="text-xs text-gray-500">B2B software campaign</span>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                  <h3 className="font-semibold text-black mb-3">Landing Page Headline</h3>
+                  <div className="bg-gray-50 p-4 rounded text-sm text-gray-700 mb-4">
+                    "Stop Burning $50K+ Monthly on Ads That Don't Convert"
+                  </div>
+                  <span className="text-xs text-gray-500">Digital marketing agency</span>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                  <h3 className="font-semibold text-black mb-3">Social Media Post</h3>
+                  <div className="bg-gray-50 p-4 rounded text-sm text-gray-700 mb-4">
+                    "3 AM breakthrough: I just discovered why 90% of startups fail in their first year. 
+                    It's not funding. It's not team. It's not product. It's this one thing nobody talks about..."
+                  </div>
+                  <span className="text-xs text-gray-500">Business coaching campaign</span>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                  <h3 className="font-semibold text-black mb-3">Sales Page CTA</h3>
+                  <div className="bg-gray-50 p-4 rounded text-sm text-gray-700 mb-4">
+                    "Claim Your Revenue Rescue Plan (47 spots left this month)"
+                  </div>
+                  <span className="text-xs text-gray-500">Business consulting service</span>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                  <h3 className="font-semibold text-black mb-3">Video Script Opening</h3>
+                  <div className="bg-gray-50 p-4 rounded text-sm text-gray-700 mb-4">
+                    "If you're spending more than 2 hours daily on social media content creation, 
+                    you're doing it wrong. Here's how we create 30 days of content in 2 hours..."
+                  </div>
+                  <span className="text-xs text-gray-500">Content creation tool</span>
+                </div>
               </div>
-            </div>
 
-            {/* Strategy Section */}
-            <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">Our Copywriting Strategy</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                <div className="text-center">
-                  <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <Target className="h-8 w-8 text-blue-600" />
+              {/* Copywriting Stats */}
+              <div className="bg-black text-white p-8 rounded-lg">
+                <h3 className="text-xl font-semibold mb-6 text-center">Our Copywriting Results</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                  <div>
+                    <div className="text-3xl font-bold mb-2">400%+</div>
+                    <p className="text-gray-300">Average conversion increase</p>
                   </div>
-                  <h3 className="font-semibold text-black mb-2">Audience Research</h3>
-                  <p className="text-gray-600">Deep dive into customer pain points and motivations</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <Edit className="h-8 w-8 text-green-600" />
+                  <div>
+                    <div className="text-3xl font-bold mb-2">50+</div>
+                    <p className="text-gray-300">Campaigns optimized</p>
                   </div>
-                  <h3 className="font-semibold text-black mb-2">Message Crafting</h3>
-                  <p className="text-gray-600">Compelling headlines and benefit-focused copy</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <Zap className="h-8 w-8 text-purple-600" />
-                  </div>
-                  <h3 className="font-semibold text-black mb-2">CTA Optimization</h3>
-                  <p className="text-gray-600">Clear, action-oriented calls-to-action</p>
-                </div>
-              </div>
-              <div className="mt-8">
-                <h3 className="text-xl font-semibold text-black mb-4">Copywriting Framework Applied:</h3>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <ul className="text-gray-700 space-y-3">
-                    <li>• <strong>Attention:</strong> Powerful headline addressing the #1 customer pain point</li>
-                    <li>• <strong>Interest:</strong> Benefit-focused subheadings and social proof</li>
-                    <li>• <strong>Desire:</strong> Emotional triggers and transformation stories</li>
-                    <li>• <strong>Action:</strong> Single, clear call-to-action with urgency</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Before vs After */}
-            <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">Before vs After</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div className="bg-red-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-red-800 mb-4">❌ Before (Generic)</h3>
-                  <div className="space-y-3 text-gray-700">
-                    <p className="font-medium">"Advanced Financial Solutions for Modern Businesses"</p>
-                    <p className="text-sm">Generic headline that could apply to any fintech company</p>
-                    <hr className="my-3" />
-                    <p>"Our platform offers comprehensive financial tools..."</p>
-                    <p className="text-sm">Feature-focused instead of benefit-focused</p>
-                  </div>
-                </div>
-                <div className="bg-green-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-green-800 mb-4">✅ After (Specific)</h3>
-                  <div className="space-y-3 text-gray-700">
-                    <p className="font-medium">"Stop Losing $10K+ Monthly to Manual Invoice Processing"</p>
-                    <p className="text-sm">Specific pain point with quantified loss</p>
-                    <hr className="my-3" />
-                    <p>"Save 15+ hours weekly and eliminate 90% of processing errors..."</p>
-                    <p className="text-sm">Clear benefits with specific numbers</p>
+                  <div>
+                    <div className="text-3xl font-bold mb-2">85%</div>
+                    <p className="text-gray-300">Client retention rate</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Results Section */}
+            {/* Copywriting Principles */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">The Results</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                <div className="bg-blue-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-blue-600 mb-2">12.3%</div>
-                  <p className="text-gray-700">New conversion rate</p>
-                </div>
-                <div className="bg-green-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-green-600 mb-2">1,437%</div>
-                  <p className="text-gray-700">Improvement in conversions</p>
-                </div>
-                <div className="bg-purple-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-purple-600 mb-2">68%</div>
-                  <p className="text-gray-700">Reduction in bounce rate</p>
-                </div>
-                <div className="bg-orange-50 p-6 rounded-lg text-center">
-                  <div className="text-4xl font-bold text-orange-600 mb-2">4.2x</div>
-                  <p className="text-gray-700">Increase in page engagement</p>
-                </div>
-              </div>
-              <div className="bg-green-100 p-8 rounded-lg">
-                <h3 className="text-xl font-semibold text-black mb-4">Additional Improvements:</h3>
-                <ul className="text-gray-700 space-y-2">
-                  <li>• Average time on page increased by 156%</li>
-                  <li>• Email sign-ups increased by 289%</li>
-                  <li>• Cost per acquisition decreased by 73%</li>
-                  <li>• Customer lifetime value increased by 45%</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Key Principles */}
-            <div className="mb-16">
-              <h2 className="text-3xl font-bold text-black mb-6">Key Copywriting Principles</h2>
+              <h2 className="text-3xl font-bold text-black mb-6">Our Copywriting Principles</h2>
               <div className="bg-gray-50 p-8 rounded-lg">
                 <ul className="space-y-4 text-gray-700">
                   <li className="flex items-start">
-                    <div className="bg-purple-500 rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
-                    <span><strong>Specificity beats generality:</strong> Specific numbers and details are more persuasive than vague claims</span>
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span><strong>Specificity beats generality:</strong> Concrete numbers and details are more persuasive than vague claims</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="bg-purple-500 rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
-                    <span><strong>Benefits over features:</strong> People buy results, not features</span>
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span><strong>Benefits over features:</strong> People buy outcomes, not specifications</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="bg-purple-500 rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
-                    <span><strong>Emotional connection:</strong> Address pain points and desired outcomes</span>
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span><strong>Emotional connection:</strong> Address pain points and desired transformations</span>
                   </li>
                   <li className="flex items-start">
-                    <div className="bg-purple-500 rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
-                    <span><strong>Single focus:</strong> One clear message and one primary call-to-action</span>
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span><strong>Single focus:</strong> One clear message with one primary call-to-action</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-black rounded-full w-2 h-2 mt-2 mr-3 flex-shrink-0"></div>
+                    <span><strong>Urgency and scarcity:</strong> Create genuine reasons for immediate action</span>
                   </li>
                 </ul>
               </div>
