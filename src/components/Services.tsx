@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Target, TrendingUp, Share2, Zap, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import winningAdCreativesBg from "@/assets/winning-ad-creatives-bg.jpg";
+import revenueGenerationBg from "@/assets/revenue-generation-bg.jpg";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ const Services = () => {
       title: "Revenue generation",
       description: "We don't stop at leads, we convert, we deliver revenues. We love accountability",
       tags: ["#LeadGeneration", "#SalesScripts", "#SalesWebinars", "#ConversionOptimization", "#FullFunnelExecution"],
-      backgroundImage: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      backgroundImage: revenueGenerationBg,
       route: "/revenue-generation"
     },
     {
