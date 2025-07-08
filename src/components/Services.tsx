@@ -49,13 +49,13 @@ const Services = () => {
   };
 
   return (
-    <section className="py-12 md:py-20 bg-muted">
+    <section className="py-12 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
             Our services
           </h2>
-          <p className="text-lg md:text-xl text-foreground font-semibold max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-black font-semibold max-w-2xl mx-auto">
             #DriveRealResults
           </p>
         </div>
