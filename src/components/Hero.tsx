@@ -74,9 +74,9 @@ const Hero = () => {
     window.location.href = path;
     setIsMobileMenuOpen(false);
   };
-  return <section className="min-h-screen bg-white text-black flex flex-col relative overflow-hidden font-lexend">
+  return <section className="min-h-screen bg-background text-foreground flex flex-col relative overflow-hidden font-lexend">
       {/* Header */}
-      <header className="w-full py-4 md:py-6 px-4 md:px-6 border-b border-black relative">
+      <header className="w-full py-4 md:py-6 px-4 md:px-6 border-b border-border relative">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex-shrink-0">
             <img src="/lovable-uploads/e1768634-31db-4374-a138-5b36403ead96.png" alt="Amby" className="h-8 md:h-12 w-auto" />
@@ -84,11 +84,11 @@ const Hero = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-black hover:text-white hover:border-black font-semibold bg-transparent" onClick={scrollToServices}>
+            <Button variant="outline" size="sm" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:border-primary font-semibold bg-transparent" onClick={scrollToServices}>
               Our services
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button variant="outline" size="sm" className="border-2 border-black text-black hover:bg-black hover:text-white hover:border-black font-semibold bg-transparent" onClick={scrollToCTA}>
+            <Button variant="outline" size="sm" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:border-primary font-semibold bg-transparent" onClick={scrollToCTA}>
               Contact us
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -101,32 +101,32 @@ const Hero = () => {
         </div>
 
         {/* Mobile Navigation Menu */}
-        {isMobileMenuOpen && <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-black z-50">
+        {isMobileMenuOpen && <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-border z-50">
             <div className="container mx-auto px-4 py-4">
               <div className="space-y-4">
                 <div>
-                  <button className="w-full text-left py-2 px-4 hover:bg-gray-100 font-medium" onClick={scrollToServices}>
+                  <button className="w-full text-left py-2 px-4 hover:bg-muted font-medium" onClick={scrollToServices}>
                     Our services
                   </button>
                   <div className="ml-4 space-y-2 mt-2">
-                    <button className="block w-full text-left py-1 px-4 text-sm text-gray-600 hover:text-black" onClick={() => handleServiceNavigation('/lead-generation')}>
+                    <button className="block w-full text-left py-1 px-4 text-sm text-muted-foreground hover:text-foreground" onClick={() => handleServiceNavigation('/lead-generation')}>
                       Lead generation
                     </button>
-                    <button className="block w-full text-left py-1 px-4 text-sm text-gray-600 hover:text-black" onClick={() => handleServiceNavigation('/revenue-generation')}>
+                    <button className="block w-full text-left py-1 px-4 text-sm text-muted-foreground hover:text-foreground" onClick={() => handleServiceNavigation('/revenue-generation')}>
                       Revenue generation
                     </button>
-                    <button className="block w-full text-left py-1 px-4 text-sm text-gray-600 hover:text-black" onClick={() => handleServiceNavigation('/social-media-growth')}>
+                    <button className="block w-full text-left py-1 px-4 text-sm text-muted-foreground hover:text-foreground" onClick={() => handleServiceNavigation('/social-media-growth')}>
                       Social media growth
                     </button>
-                    <button className="block w-full text-left py-1 px-4 text-sm text-gray-600 hover:text-black" onClick={() => handleServiceNavigation('/winning-ad-creatives')}>
+                    <button className="block w-full text-left py-1 px-4 text-sm text-muted-foreground hover:text-foreground" onClick={() => handleServiceNavigation('/winning-ad-creatives')}>
                       Winning ad creatives
                     </button>
                   </div>
                 </div>
-                <button className="w-full text-left py-2 px-4 hover:bg-gray-100 font-medium" onClick={scrollToCaseStudies}>
+                <button className="w-full text-left py-2 px-4 hover:bg-muted font-medium" onClick={scrollToCaseStudies}>
                   Case studies
                 </button>
-                <button className="w-full text-left py-2 px-4 hover:bg-gray-100 font-medium" onClick={scrollToCTA}>
+                <button className="w-full text-left py-2 px-4 hover:bg-muted font-medium" onClick={scrollToCTA}>
                   Contact us
                 </button>
               </div>
@@ -139,18 +139,18 @@ const Hero = () => {
         <div className="container mx-auto relative z-10 my-0">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6 md:mb-8">
-              <h2 className="font-bold mb-4 md:mb-6 leading-tight text-black text-center py-0 my-0 text-6xl md:text-7xl">
+              <h2 className="font-bold mb-4 md:mb-6 leading-tight text-foreground text-center py-0 my-0 text-6xl md:text-7xl">
                 The missing team<br />behind your growth.
               </h2>
-              <p className="text-base md:text-xl lg:text-2xl text-black mb-6 md:mb-8 max-w-2xl mx-auto px-px my-[10px]">Leads. Sales. Content creation.</p>
+              <p className="text-base md:text-xl lg:text-2xl text-foreground mb-6 md:mb-8 max-w-2xl mx-auto px-px my-[10px]">Leads. Sales. Content creation.</p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-8 md:mb-12 px-4">
-              <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold w-full sm:w-auto" onClick={handleBookService}>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold w-full sm:w-auto" onClick={handleBookService}>
                 Book our service
                 <ArrowRight className="ml-2 h-4 md:h-5 w-4 md:w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-black hover:text-white hover:border-black px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold bg-transparent w-full sm:w-auto" onClick={handleFreeAudit}>
+              <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:border-primary px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold bg-transparent w-full sm:w-auto" onClick={handleFreeAudit}>
                 Free growth audit
                 <ArrowRight className="ml-2 h-4 md:h-5 w-4 md:w-5" />
               </Button>
@@ -158,16 +158,16 @@ const Hero = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-16 px-4">
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-black mb-2">4X</div>
-                <div className="text-black text-sm md:text-base">Revenue growth</div>
+                <div className="text-2xl md:text-3xl font-bold text-foreground mb-2">4X</div>
+                <div className="text-foreground text-sm md:text-base">Revenue growth</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-black mb-2">1/5th</div>
-                <div className="text-black text-sm md:text-base">Cost per acquisition</div>
+                <div className="text-2xl md:text-3xl font-bold text-foreground mb-2">1/5th</div>
+                <div className="text-foreground text-sm md:text-base">Cost per acquisition</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-black mb-2">1 Lakh+</div>
-                <div className="text-black text-sm md:text-base">Quality leads generated</div>
+                <div className="text-2xl md:text-3xl font-bold text-foreground mb-2">1 Lakh+</div>
+                <div className="text-foreground text-sm md:text-base">Quality leads generated</div>
               </div>
             </div>
           </div>
