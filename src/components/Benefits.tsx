@@ -63,22 +63,22 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="py-20 bg-white font-lexend">
+    <section className="py-20 bg-background font-lexend">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             How you can benefit
           </h2>
         </div>
 
         <div className="max-w-6xl mx-auto">
           <Tabs defaultValue="business-owner" className="w-full">
-            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 gap-2 md:gap-0 mb-8 md:mb-12 bg-white">
+            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 gap-2 md:gap-0 mb-8 md:mb-12 bg-background">
               {benefitSections.map((section) => (
                 <TabsTrigger 
                   key={section.id} 
                   value={section.id}
-                  className="data-[state=active]:bg-black data-[state=active]:text-white text-black bg-white hover:bg-gray-100 py-3 md:py-4 px-4 md:px-6 text-sm md:text-base font-medium transition-all duration-200 w-full text-center border border-black"
+                  className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-foreground bg-background hover:bg-muted py-3 md:py-4 px-4 md:px-6 text-sm md:text-base font-medium transition-all duration-200 w-full text-center border border-border"
                 >
                   <section.icon className="h-4 w-4 mr-2 flex-shrink-0" />
                   <span className="truncate">{section.title}</span>
@@ -92,12 +92,12 @@ const Benefits = () => {
                   {section.benefits.map((benefit, benefitIndex) => (
                     <div key={benefitIndex} className="text-left">
                       <div className="flex items-start">
-                        <CheckCircle className="h-6 w-6 mt-1 mr-3 flex-shrink-0 text-black" />
+                        <CheckCircle className="h-6 w-6 mt-1 mr-3 flex-shrink-0 text-primary" />
                         <div>
-                          <h4 className="text-lg md:text-xl font-semibold mb-3 text-black">
+                          <h4 className="text-lg md:text-xl font-semibold mb-3 text-foreground">
                             {benefit.title}
                           </h4>
-                          <p className="leading-relaxed text-gray-600 text-base md:text-lg">
+                          <p className="leading-relaxed text-muted-foreground text-base md:text-lg">
                             {benefit.description}
                           </p>
                         </div>
